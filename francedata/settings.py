@@ -16,8 +16,9 @@ NEWSPIDER_MODULE = 'francedata.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'francedata (+http://www.yourdomain.com)'
 
-CLOSESPIDER_ITEMCOUNT = 3
-
-EXTENSIONS = {
-    'scrapy.contrib.closespider.CloseSpider': 4,
-}
+# For debugging purpose
+#CLOSESPIDER_ITEMCOUNT = 3
+#
+#EXTENSIONS = {
+#    'scrapy.contrib.closespider.CloseSpider': 4,
+#}
