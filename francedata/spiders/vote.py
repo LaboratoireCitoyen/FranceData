@@ -45,10 +45,14 @@ class VoteSpider(CrawlSpider):
         for scrutin in response.xpath('//table[@class="scrutins"]/tbody/tr'):
             item = ScrutinItem()
             item['numero'] = self.get_text(scrutin, 'td[1]')
-            item['date'] = self.get_text(scrutin, 'td[2]')
             item['objet'] = re.sub('\.[^.]*?$', '', self.get_text(scrutin, 'td[3]'))
             item['url'] = self.get_absolute_path(scrutin.select(
                 'td/a[contains(text(), "analyse")]/@href')[0].extract())
+
+            matches = re.search('(\d{1,2})/(\d{1,2})/(\d{1,4})',
+                                self.get_text(scrutin, 'td[2]'))
+            item['date'] = '-'.join((matches.group(3), matches.group(2),
+                                     matches.group(1)))
 
             try:
                 item['dossier_url'] = self.get_absolute_path(scrutin.select(
