@@ -1,27 +1,45 @@
 # -*- coding: utf-8 -*-
 import re
+import urlparse
 
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors import LinkExtractor
 
-from francedata.items import VoteItem, ScrutinItem
+from francedata.items import VoteItem, ScrutinItem, DossierItem
 
 
 class VoteSpider(CrawlSpider):
     DIVISIONS = ['Pour', 'Contre', 'Abstention']
 
     name = "votespider"
-    allowed_domains = ["www2.assemblee-nationale.fr"]
+    allowed_domains = [
+        "www.assemblee-nationale.fr",
+        "www2.assemblee-nationale.fr"
+    ]
     start_urls = (
         'http://www2.assemblee-nationale.fr/scrutins/liste/',
     )
     rules = [
         Rule(LinkExtractor(allow=['/scrutins/detail/.*']), 'parse_vote'),
         Rule(LinkExtractor(allow=['/scrutins/liste/.*']), 'parse_scrutin'),
+        Rule(LinkExtractor(allow=['/\d+/dossiers/.*']), 'parse_dossier'),
     ]
 
     def get_text(self, element, selector):
         return element.select('%s/text()' % selector).extract()[0].strip()
+
+    def get_absolute_path(self, url):
+        return urlparse.urlparse(url).path
+
+    def parse_dossier(self, response):
+        title = response.xpath('/html/head/title/text()').extract()[0]
+        titre = re.sub('[^-]*-', '', title).strip()
+
+        item = DossierItem()
+        item['url'] = self.get_absolute_path(response.url)
+        item['titre'] = titre
+
+        yield item
 
     def parse_scrutin(self, response):
         for scrutin in response.xpath('//table[@class="scrutins"]/tbody/tr'):

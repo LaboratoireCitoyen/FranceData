@@ -16,6 +16,11 @@ class ScrutinItem(scrapy.Item):
     dossier_url = scrapy.Field()
 
 
+class DossierItem(scrapy.Item):
+    url = scrapy.Field()
+    titre = scrapy.Field()
+
+
 class VoteItem(scrapy.Item):
     scrutin_url = scrapy.Field()
 
