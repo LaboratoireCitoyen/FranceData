@@ -31,8 +31,12 @@ class VoteSpider(CrawlSpider):
             item['objet'] = re.sub('\.[^.]*?$', '', self.get_text(scrutin, 'td[3]'))
             item['url'] = scrutin.select(
                 'td/a[contains(text(), "analyse")]/@href')[0].extract()
-            item['dossier_url'] = scrutin.select(
-                'td/a[contains(text(), "dossier")]/@href')[0].extract()
+
+            try:
+                item['dossier_url'] = scrutin.select(
+                    'td/a[contains(text(), "dossier")]/@href')[0].extract()
+            except IndexError:
+                pass
 
             yield item
 
