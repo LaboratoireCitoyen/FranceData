@@ -13,16 +13,19 @@ class ScrutinItem(scrapy.Item):
     objet = scrapy.Field()
     date = scrapy.Field()
     url = scrapy.Field()
+    uri = scrapy.Field()
     dossier_url = scrapy.Field()
+    dossier_uri = scrapy.Field()
 
 
 class DossierItem(scrapy.Item):
     url = scrapy.Field()
+    uri = scrapy.Field()
     titre = scrapy.Field()
 
 
 class VoteItem(scrapy.Item):
-    scrutin_url = scrapy.Field()
+    scrutin_uri = scrapy.Field()
 
     prenom = scrapy.Field()
     nom = scrapy.Field()

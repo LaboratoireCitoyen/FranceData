@@ -26,7 +26,7 @@ class DossierSpider(BaseSpider):
             '//a[contains(@href, "/dossiers/")]/@href').extract()
 
         for dossier in set(dossiers):
-            yield Request(url=self.make_url(dossier),
+            yield Request(url=self.make_url(response, dossier),
                           callback=self.parse_dossier)
 
         for result in super(DossierSpider, self).parse_page(response):
@@ -37,7 +37,8 @@ class DossierSpider(BaseSpider):
         titre = re.sub('[^-]*-', '', title).strip()
 
         item = DossierItem()
-        item['url'] = self.get_absolute_path(response.url)
+        item['uri'] = self.get_absolute_path(response.url)
+        item['url'] = self.make_url(response, response.url)
         item['titre'] = titre
 
         yield item

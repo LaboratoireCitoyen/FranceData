@@ -49,7 +49,7 @@ class VoteSpider(BaseSpider):
 
                 for votant in votants:
                     item = VoteItem()
-                    item['scrutin_url'] = self.get_absolute_path(response.url)
+                    item['scrutin_uri'] = self.get_absolute_path(response.url)
                     item['groupe'] = nomgroupe
                     item['division'] = division
                     item['prenom'] = votant.xpath('text()').extract()[0].strip()

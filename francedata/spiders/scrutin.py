@@ -24,8 +24,9 @@ class ScrutinSpider(BaseSpider):
             item = ScrutinItem()
             item['numero'] = self.get_text(scrutin, 'td[1]')
             item['objet'] = re.sub('\.[^.]*?$', '', self.get_text(scrutin, 'td[3]'))
-            item['url'] = self.get_absolute_path(scrutin.select(
+            item['uri'] = self.get_absolute_path(scrutin.select(
                 'td/a[contains(text(), "analyse")]/@href')[0].extract())
+            item['url'] = self.make_url(response, item['uri'])
 
             matches = re.search('(\d{1,2})/(\d{1,2})/(\d{1,4})',
                                 self.get_text(scrutin, 'td[2]'))
@@ -33,9 +34,12 @@ class ScrutinSpider(BaseSpider):
                                      matches.group(1)))
 
             try:
-                item['dossier_url'] = self.get_absolute_path(scrutin.select(
+                item['dossier_uri'] = self.get_absolute_path(scrutin.select(
                     'td/a[contains(text(), "dossier")]/@href')[0].extract())
             except IndexError:
                 pass
+            else:
+                item['dossier_url'] = self.make_url(response,
+                                                    item['dossier_uri'])
 
             yield item
