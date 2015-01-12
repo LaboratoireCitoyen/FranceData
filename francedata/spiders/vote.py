@@ -16,7 +16,7 @@ class VoteSpider(CrawlSpider):
         'http://www2.assemblee-nationale.fr/scrutins/liste/',
     )
     rules = [
-        #Rule(LinkExtractor(allow=['/scrutins/detail/.*']), 'parse_vote'),
+        Rule(LinkExtractor(allow=['/scrutins/detail/.*']), 'parse_vote'),
         Rule(LinkExtractor(allow=['/scrutins/liste/.*']), 'parse_scrutin'),
     ]
 
