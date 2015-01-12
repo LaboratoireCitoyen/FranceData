@@ -47,12 +47,12 @@ class VoteSpider(CrawlSpider):
             item['numero'] = self.get_text(scrutin, 'td[1]')
             item['date'] = self.get_text(scrutin, 'td[2]')
             item['objet'] = re.sub('\.[^.]*?$', '', self.get_text(scrutin, 'td[3]'))
-            item['url'] = scrutin.select(
-                'td/a[contains(text(), "analyse")]/@href')[0].extract()
+            item['url'] = self.get_absolute_path(scrutin.select(
+                'td/a[contains(text(), "analyse")]/@href')[0].extract())
 
             try:
-                item['dossier_url'] = scrutin.select(
-                    'td/a[contains(text(), "dossier")]/@href')[0].extract()
+                item['dossier_url'] = self.get_absolute_path(scrutin.select(
+                    'td/a[contains(text(), "dossier")]/@href')[0].extract())
             except IndexError:
                 pass
 
