@@ -1,0 +1,1679 @@
+	<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr-FR"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr-FR"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr-FR"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr-FR"> <!--<![endif]-->    <head>
+        
+        <meta charset="utf-8">
+                <title>Table des scrutins publics de la 14e législature - Assemblée nationale</title>
+                
+                
+        
+                
+                    <meta name="Content-Type" content="text/html; charset=utf-8">
+                    <meta name="Content-language" content="fr-FR">
+                
+                                    <meta name="X-UA-Compatible" content="IE=edge,chrome=1">
+                                                <meta name="viewport" content="width=954">
+                                                <meta name="author" content="Assemblée Nationale">
+                                                <meta name="copyright" content="Assemblée Nationale">
+                                                <meta name="description" content="Presentation de l'Assemblee nationale, du palais Bourbon, de ses membres (deputes), de son fonctionnement et de son actualite : agenda, travaux en cours (amendements, rapports, commissions, lois), textes et dossiers (legislatifs ou d'actualite)...">
+                                                <meta name="keywords" content="député, hémicycle, Palais Bourbon, Assemblée nationale, parlementaire">
+                    				
+
+        
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-ico">
+		
+		
+        
+                        <link rel="stylesheet" type="text/css" href="/extension/common/design/an/stylesheets/bootstrap-2.1.1.min.css" />
+<link rel="stylesheet" type="text/css" href="/extension/common/design/an/stylesheets/jquery-ui-1.8.21.custom.css" />
+<link rel="stylesheet" type="text/css" href="/extension/ezswidl-dashboard/design/standard/stylesheets/datatable_page.css" />
+<link rel="stylesheet" type="text/css" href="/extension/ezswidl-dashboard/design/standard/stylesheets/datatable_table_jui.css" />
+<link rel="stylesheet" type="text/css" href="/extension/common/design/an/stylesheets/chosen-0.9.12.css" />
+<link rel="stylesheet" type="text/css" href="/extension/common/design/an/stylesheets/perfect-scrollbar-0.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="/extension/common/design/an/stylesheets/font-awesome-4.0.3.min.css" />
+<link rel="stylesheet" type="text/css" href="/extension/common/design/an/stylesheets/debug.css" />
+<link rel="stylesheet" type="text/css" href="/extension/an/design/an/stylesheets/scrutin.css" />
+
+                
+				
+		
+
+        
+        		
+																
+        <link rel="stylesheet" type="text/css" href="/var/ezflow_site/cache/public/stylesheets/805ca921fc9cf144c004a0c98838fe2d.css" />
+<link rel="stylesheet" type="text/css" href="/var/ezflow_site/cache/public/stylesheets/8d2e28ebc8d9606ebaca9361072443a2.css" />
+<link rel="stylesheet" type="text/css" href="/var/ezflow_site/cache/public/stylesheets/06b0c5373791b62d171a6f9290c82338.css" />
+<link rel="stylesheet" type="text/css" href="/var/ezflow_site/cache/public/stylesheets/07d5b7318aba51c11fef24c0230c4991.css" />
+<link rel="stylesheet" type="text/css" href="/var/ezflow_site/cache/public/stylesheets/b0921dab1fdbc41abcb7ecadf31f0e06.css" />
+<link rel="stylesheet" type="text/css" href="/var/ezflow_site/cache/public/stylesheets/f188db7ef00756a87fa47db36c8351be.css" />
+
+		
+        
+		
+		<script src="/extension/common/design/an/javascript/modernizr-2.6.2.min.js"></script>
+				<link rel="stylesheet" href="/extension/common/design/an/stylesheets/print.css" media="print">
+		
+
+    </head>
+    <body>
+        <div id="header">
+            <header>
+				                <div id="header-bg" class="container">
+                    <a id="logo" href="/">
+                        <img src="/extension/common/design/an/images/layout/logo.png" alt="Logo de l'Assemblée nationale" />
+                    </a>
+                    <div id="header-title">Assemblée nationale</div>
+                </div>
+            </header>
+
+			
+            <nav>
+                <ul id="navigation" class="sf-menu sf-navbar container">
+                    <li id="nav-home">
+                        <a href="http://www.assemblee-nationale.fr" accesskey="1">Accueil</a>
+                    </li>
+                    <li tabindex="1" id="nav-deputies">
+                        <a title="Ouvrir le menu les députés" href="#menupresident">Les<br />députés<span class="bord"> </span></a>
+                        <ul>
+                            <li><a id="menupresident" href="http://presidence.assemblee-nationale.fr">Le Président</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/qui/">577 députés</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/tribun/xml/bureau_assemblee.asp">Le Bureau</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/tribun/xml/conf_pre.asp">La Conférence des Présidents</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/tribun/xml/effectifs_groupes.asp">Les Groupes politiques</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/qui/deontologie.asp">Statut des députes</a></li>
+                            <li>
+                                <a href="#">Déontologie<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/qui/deontologie.asp">Déontologue</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/representants-interets/index.asp">Représentants d'intérêt</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.assemblee-nationale.fr/elections/2012/index.asp">Élections législatives</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/histoire/trombinoscope/VRepublique/legislatures.asp">Anciens députés</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/qui/xml/liste_alpha.asp?legislature=14">Contacter son député</a></li>
+							<li class="hide"><a href="#nav-org-tra">Ouvrir le menu dans l'hémicycle</a></li>
+					   </ul>
+                    </li>
+                    <li tabindex="2" id="nav-org-tra">
+                        <a title="Ouvrir le menu dans l'hémicycle" href="#menuodj">Dans<br />l'Hémicycle<span class="bord"> </span></a>
+                        <ul>
+                            <li><a id="menuodj" href="http://www.assemblee-nationale.fr/agendas/odj.asp">Ordre du jour</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/seance/previsionnel.asp">Programme de travail prévisionnel</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/debats/index.asp">Comptes rendus des séances</a></li>
+                            <li>
+                                <a href="#">Scrutins<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/14/documents/index-scrutins.asp">Les scrutins solennels</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/14/scrutins/table-redirect.asp">Tous les scrutins publics</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/documents/engagements.asp">Engagements de responsabilité et motions de censure</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/budget/index.asp">Budget et sécurité sociale</a></li>						
+                            <li><a href="http://www.assemblee-nationale.fr/infos/assister.asp">Assister à une séance</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/seance/index-statistiques.asp">Statistiques</a></li>
+                            <li>
+                                <a href="#">Archives<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/13/documents/archives-13leg.asp">XIII<sup>e</sup> législature</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/12/documents/archives-12leg.asp">XII<sup>e</sup> législature</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/11/documents/archives-11leg.asp">XI<sup>e</sup> législature</a></li>
+                                    <li><a href="http://archives.assemblee-nationale.fr/">Autres législatures</a></li>
+                                </ul>
+                            </li>
+							<li class="hide"><a href="#nav-commissions">Ouvrir le menu commissions et autres instances</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="3" id="nav-commissions">
+                        <a title="Ouvrir le menu commissions et autres instances" href="#menuagenda">Commissions et<br />autres instances<span class="bord"> </span></a>
+                        <ul>
+                            <li><a id="menuagenda" href="http://www.assemblee-nationale.fr/agendas/index.asp">Agendas</a></li>
+                            <li>
+                                <a href="#">Les Commissions permanentes<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/419604_tab.asp">Affaires culturelles</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/419610_tab.asp">Affaires économiques</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/59047_tab.asp">Affaires étrangères</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/420120_tab.asp">Affaires sociales</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/59046_tab.asp">Défense</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/419865_tab.asp">Développement durable</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/59048_tab.asp">Finances</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/59051_tab.asp">Lois</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Autres commissions<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/due-index.asp">Affaires européennes</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/14/controle/index_enquete_mission.asp">Commissions d'enquête</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/14/commissions/cspeciales-index.asp">Commissions spéciales</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/qui/xml/organe.asp?id_organe=/14/tribun/xml/xml/organes/271860.xml">Commission chargée d'apurer les comptes</a></li>
+			      <li><a href="http://www.assemblee-nationale.fr/qui/xml/organe.asp?id_organe=/14/tribun/xml/xml/organes/271850.xml">Commission-article 26 de la Constitution</a></li>
+			      <li><a href="http://www2.assemblee-nationale.fr/14/commissions/numerique">Droits et libertés à l'âge du numérique</a></li>
+			      <li><a href="http://www2.assemblee-nationale.fr/14/commissions/avenir-des-institutions">Avenir des institutions</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Les Délégations, Comité et  Offices parlementaires<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/delf-index.asp">Délégation aux Droits<br> des Femmes</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/dom-index.asp">Délégation aux outre-mer</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/delegation_renseignement.asp">Délégation au renseignement</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/14/controle/com_cec/">Comité d'évaluation et de contrôle</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/commissions/opecst-index.asp">Office parlementaire d'évaluation des choix scientifiques et technologiques</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/controle/index-missions-info.asp">Missions d'information</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/qui/xml/GE_bureau_20121114.pdf">Groupes d'étude</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/seance/index-statistiques.asp">Statistiques</a></li>
+                            <li>
+                                <a href="#">Archives<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/13/documents/archives-13leg.asp">XIII<sup>e</sup> législature</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/12/documents/archives-12leg.asp">XII<sup>e</sup> législature</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/11/documents/archives-11leg.asp">XI<sup>e</sup> législature</a></li>
+                                    <li><a href="http://archives.assemblee-nationale.fr/">Autres législatures</a></li>
+                                </ul>
+                            </li>
+							<li class="hide"><a href="#nav-docs">Ouvrir le menu documents parlementaires</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="4" id="nav-docs">
+                        <a title="Ouvrir le menu documents parlementaires" href="#menudoc">Documents<br />parlementaires<span class="bord"> </span></a>
+                        <ul>	
+                            <li>
+                                <a id="menudoc" href="#">Documents de références<span class="sf-sub-indicator"></span></a>
+                                <ul>
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/constitution.asp">Constitution</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/reglement.asp">Règlement intérieur</a></li>
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/instruction.asp">Instruction générale du Bureau (IGB)</a></li> 
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/reglement_congres.asp">Règlement du Congrès</a></li> 
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/pouvoirs-publics/pouvoirs_publics-08.asp#P13383_1259070">Ordonnance relative au fonctionnement des assemblées parlementaires</a></li> 
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/ordonnance-finances.asp">Loi organique relative aux lois de finances</a></li> 
+                                    <li><a href="http://www.assemblee-nationale.fr/connaissance/pouvoirs-publics/pouvoirs_publics.asp">Recueil des textes relatifs aux pouvoirs publics</a></li> 
+                                </ul>
+                            </li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/documents/index-projets.asp">Projets de loi</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/documents/index-proposition.asp">Propositions de loi</a></li>
+                            <li><a href="http://www2.assemblee-nationale.fr/recherche/amendements">Amendements</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/documents/index-ta.asp">Textes adoptés</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/documents/index-rapports.asp">Rapports législatifs</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/documents/index-dossier.asp">Dossiers législatifs</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/budget/plf2014/liste_rapporteurs.asp">Documents budgétaires</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/liste/rapport_information1.asp">Rapports d'information</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/14/liste/rapport_application_lois1.asp">Rapports sur l'application de la loi</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/controle/questions.asp">Questions écrites et orales</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/documents/index.asp">Tous les documents parlementaires</a></li>
+							<li class="hide"><a href="#nav-international">Ouvrir le menu europe et international</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="5" id="nav-international">
+                        <a title="Ouvrir le menu europe et international" href="#menuinter">Europe<br />et international<span class="bord"> </span></a>
+                        <ul>								
+                            <li><a id="menuinter" href="http://www.assemblee-nationale.fr/agendas/international.asp">L'agenda européen et international</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/europe/">L'Assemblée nationale et l'Union Européenne</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/international/index.asp">Activités parlementaires internationales</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/international/groupes-amitie-index.asp">Groupes d'amitié</a></li>
+							<li class="hide"><a href="#nav-ass-nat">Ouvrir le menu découvrir l'Assemblée</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="6" id="nav-ass-nat">
+                        <a title="Ouvrir le menu découvrir l'Assemblée" href="#menubienvenue">Découvrir<br />l'Assemblée<span class="bord"> </span></a>
+                        <ul>
+                            <li><a id="menubienvenue" href="http://www.assemblee-nationale.fr/connaissance/bienvenue.asp">Bienvenue à l'Assemblée nationale</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/infos/visiter.asp">Visiter l'Assemblée nationale</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/connaissance/index.asp">Rôle et pouvoirs de l'Assemblée</a></li>
+							<li><a href="http://www.assemblee-nationale.fr/connaissance/comptesan.asp">Comptes de l'Assemblée</a></li>
+							<li><a href="/decouvrir-l-assemblee/histoire">Histoire</a></li>
+							<li><a href="/decouvrir-l-assemblee/patrimoine">Patrimoine</a></li>
+
+                            <li><a href="http://www.assemblee-nationale.fr/juniors/index.asp">Juniors</a></li>
+							<li class="hide"><a href="#nav-infos">Ouvrir le menu informations pratiques  </a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="7" id="nav-infos">
+                        <a title="Ouvrir le menu informations pratiques" href="#menuserendre">Informations<br />pratiques<span class="bord"></span></a>
+                        <ul>
+                            <li><a id="menuserendre" href="http://www.assemblee-nationale.fr/infos/venir.asp">Se rendre à l'Assemblée nationale</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/infos/services.asp">Les services de l’Assemblée</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/concours/index.asp">Concours et recrutement</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/marches-publics/index.asp">Marchés publics</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/presse/index.asp">Espace Presse</a></li>
+							<li><a href="/informations-pratiques/archives-et-bibliotheque">Archives et bibliothèque</a></li>
+                            <li><a href="http://www.assemblee-nationale.fr/plan.asp">Plan du site</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+			
+        </div>
+		
+        <div id="page-fond" class="clearfix">
+			<div id="page" class="clearfix section_">
+				<div class="clearfix">
+					
+
+<section>
+	<div id="haut-contenu-page" class="clearfix">
+		<div class="interieur-contenu-principal clearfix">
+	<ol class="breadcrumb">
+		<li class="sr-only">Vous êtes ici :</li>
+		<li><a href="http://www.assemblee-nationale.fr/">Accueil</a></li>
+						<li><a href="http://www.assemblee-nationale.fr/14/seance" title="Travaux en séance">Travaux en...</a></li>
+								<li class="active">Table des scrutins publics de la 14e législature</li>
+					</ol>
+</div> 
+		<div class="titre-bandeau-bleu">
+			<h1>Table des scrutins publics</h1>
+			<p class="deputy-healine-sub-title">14e législature</p>
+		</div>
+
+
+		<div class="contenu-principal clearfix">
+			<div class="interieur-contenu-principal clearfix">
+			
+			<div class="article-content-sub synthese">
+				<p class="synthese">Présentation de l'analyse des scrutins</p>
+				<p style="text-align:center">(application de l'<a href="http://www.assemblee-nationale.fr/connaissance/instruction.asp#igb_13">article  13 de l'Instruction générale du Bureau</a>)</p>
+				<br>
+Depuis le 8 avril 2014, l'analyse indique, pour chaque groupe ainsi que pour les députés n’appartenant à aucun groupe, au regard de chaque position de vote, la liste alphabétique des députés ayant adopté cette position.<br>
+Pour les scrutins antérieurs au 8 avril 2014, il y a lieu de distinguer les scrutins publics dits «&nbsp;ordinaires » et les scrutins publics dits « solennels » :<br>
+- pour les scrutins  publics dits « ordinaires », décidés par le président de séance ou demandés par le Gouvernement, la commission saisie au fond ou un président de groupe, l’analyse indique, 
+        pour chaque groupe ainsi que pour les députés n’appartenant à aucun groupe, la position de vote adoptée par le plus grand nombre des membres présents ou ayant délégué leur vote et, par ailleurs, pour les autres 
+        positions de vote, elle précise la liste alphabétique des députés ayant adopté ces 
+        autres 
+        positions&nbsp;; ne se trouvent ainsi individualisés que les votes des 
+        députés ayant un vote différent de celui de la majorité du groupe ;<br>
+        - 
+        pour les scrutins publics dits « solennels » (identifiés dans le tableau 
+        ci-dessous par l'astérisque * à côté de leur numéro), organisés par la 
+        Conférence des présidents en application de
+        <a href="http://www.assemblee-nationale.fr/connaissance/reglement.asp#P909_96872">l’article 65-1 du Règlement</a>, l’analyse consiste en une liste 
+        nominative intégrale des votants, au regard de chaque position de vote, 
+        pour chaque groupe ainsi que pour les députés n’appartenant à aucun 
+        groupe.
+			</div>			<div style="border-top: 0px solid rgb(205, 228, 238); height: 18px; background: url('http://www.assemblee-nationale.fr/commun/2011/images/theme/bg-bottom-shadow1.png') no-repeat left bottom;"></div>
+			<form name="scrutins" id="scrutins" method="post" style="display:block" class="no-print form-horizontal">
+				<div class="titrerecherche_wrapper">
+					<h3 class="titrerecherche"><img src="/extension/ansearch/design/an/images/carre_bleu.gif" class="carre">Recherche par critères</h3>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Scrutins</label>
+					<div class="controls">
+						<select name="type" class="chzn-select inpuser" id="field_type" tabindex="20">
+							 
+									<option value="TOUS"  selected >Choisissez un type</option>
+								 
+									<option value="SOR" >Scrutins publics ordinaires</option>
+								 
+									<option value="SSO" >Scrutins solennels sur l'ensemble d'un texte</option>
+								 
+									<option value="AUT" >Autres (déclarations, motions de censure...)</option>
+														</select>
+					</div>
+				</div>
+						
+				<div class="control-group">
+					<label class="control-label">Dossiers législatifs</label>
+					<div class="controls">
+						<select name="idDossier" class="chzn-select inpuser" id="field_idDossier" tabindex="20">
+							<option value="TOUS">Choisissez un dossier législatif</option>
+							 
+							<option value="S-LEGANR5L14DLDéclaration_politique_générale" >Déclaration de politique générale</option>
+							 
+							<option value="S-LEGANR5L14DLdeuxieme_collectif_2012" >Budget : loi de finances rectificative 2012 (2)</option>
+							 
+							<option value="S-LEGANR5L14DLmariage_personnes_meme_sexe" >Société : ouverture du mariage aux couples de même sexe</option>
+							 
+							<option value="S-LEGANR5L14DLharcelement_sexuel" >Justice : harcèlement sexuel</option>
+							 
+							<option value="S-LEGANR5L14DLcreation_emplois_avenir" >Travail : création des emplois d'avenir</option>
+							 
+							<option value="S-LEGANR5L14DLmobilisation_foncier_public_logement" >Logement et urbanisme : logement social (1)</option>
+							 
+							<option value="S-LEGANR5L14DLtarification_progressive_energie" >Energie : système énergétique sobre, tarification de l'eau et éoliennes</option>
+							 
+							<option value="S-LEGANR5L14DLcopresidence_paritaire_groupes_politiques_AN" >Pouvoirs publics : coprésidence paritaire pour les groupes politiques à l'Assemblée nationale</option>
+							 
+							<option value="S-LEGANR5L14DLseparation_regulation_activites_bancaires" >Economie : separation et régulation des activités bancaires</option>
+							 
+							<option value="S-LEGANR5L14DLconseillers_municipaux_communautaires_departementaux" >Collectivités territoriales : conseillers municipaux, intercommunaux, départementaux et calendrier électoral (2 projets de loi)</option>
+							 
+							<option value="S-LEGANR5L14DLcarte_combattant_OPEX_Algerie" >Anciens combattants : conditions d'attribution de la carte du combattant</option>
+							 
+							<option value="S-LEGANR5L14DLsimplification_normes_collectivites_locales" >Collectivités territoriales : simplification du fonctionnement</option>
+							 
+							<option value="S-LEGANR5L14DLrefondation_ecole_Republique" >Education : refondation de lécole de la République</option>
+							 
+							<option value="S-LEGANR5L14DLmotion_censure_mars2013" >Motion de censure déposée en application de l'article 49 alinéa 2 de la Constitution par M. Christian Jacob et 144 membres de l'Assemblée nationale</option>
+							 
+							<option value="S-LEGANR5L14DLbiologie_medicale_reforme" >Questions sociales et santé : réforme de la biologie médicale</option>
+							 
+							<option value="S-LEGANR5L14DLcirconscription_unique_parlement_europeen" >Union européenne : circonscription unique pour l'élection au Parlement européen</option>
+							 
+							<option value="S-LEGANR5L14DLratification_traite_stabilite_coordination_gouvernance" >Union européenne : traité sur la stabilité, la coordination et la gouvernance au sein de l'UEM</option>
+							 
+							<option value="S-LEGANR5L14DLsecurisation_emploi" >Travail : sécurisation de l'emploi</option>
+							 
+							<option value="S-LEGANR5L14DLprogrammation_gouvernance_finances_publiques" >Budget : gouvernance des finances publiques</option>
+							 
+							<option value="S-LEGANR5L14DLAide_medicale_etat" >Aide médicale d'Etat</option>
+							 
+							<option value="S-LEGANR5L14DLloi_finances_2013" >Budget : loi de finances 2013</option>
+							 
+							<option value="S-LEGANR5L14DLloi_finances_1217" >Budget : finances publiques 2012-2017</option>
+							 
+							<option value="S-LEGANR5L14DLplfss_2013" >Sécurité sociale : loi de financement 2013</option>
+							 
+							<option value="S-LEGANR5L14DLprorogation_bonus_salaries_outre-mer" >Outre-mer : prorogation du régime social du bonus exceptionnel outre-mer</option>
+							 
+							<option value="S-LEGANR5L14DLinfrastructures_services_transports" >Transports : infrastructures et services</option>
+							 
+							<option value="S-LEGANR5L14DLsecurite_sociale_organisation_energie_fusion" >Affaires étrangères : accord de sécurité sociale avec l'Organisation internationale pour l'énergie de fusion</option>
+							 
+							<option value="S-LEGANR5L14DLtransfert_biens_sectionaux_communes" >Collectivités territoriales : régime des sections de commune</option>
+							 
+							<option value="S-LEGANR5L14DLDéclaration_du_Gouvernement_prolongation_Mali" >la déclaration du Gouvernement, en application de l'article 35, alinéa 3, de la Constitution, sur l'autorisation de la prolongation de l'intervention des forces françaises au Mali</option>
+							 
+							<option value="S-LEGANR5L14DLDéclaration_du_Gouvernement_programme_stabilité" >le programme de stabilité de la France 2013-2017 (sur la déclaration du Gouvernement en application de l'article 50-1 de la Constitution) [analyse du scrutin]</option>
+							 
+							<option value="S-LEGANR5L14DLegalite_droits_integration_handicapes" >Société : égalité des droits et intégration des personnes handicapées</option>
+							 
+							<option value="S-LEGANR5L14DLprorogation_mandat_AFE" >Pouvoirs publics : prorogation du mandat des membres de l'Assemblée des Français de l'étranger</option>
+							 
+							<option value="S-LEGANR5L14DLamnistie_faits_mouvements_sociaux_syndicaux" >Justice : amnistie des faits commis lors de mouvements sociaux et syndicaux</option>
+							 
+							<option value="S-LEGANR5L14DLenseignement_superieur_recherche" >Education : enseignement supérieur et recherche</option>
+							 
+							<option value="S-LEGANR5L14DLreforme_conseil_superieur_magistrature" >Justice : réforme du Conseil supérieur de la magistrature</option>
+							 
+							<option value="S-LEGANR5L14DLattributions_magistrats_ministere_public" >Justice : attributions du garde des sceaux et des magistrats du ministère public</option>
+							 
+							<option value="S-LEGANR5L14DLtransparence_vie_publique_pjl" >Pouvoirs publics : transparence de la vie publique</option>
+							 
+							<option value="S-LEGANR5L14DLrepresentation_expatries" >Pouvoirs publics : représentation des Français établis hors de France</option>
+							 
+							<option value="S-LEGANR5L14DLlutte_fraude_fiscale" >Justice : lutte contre la fraude fiscale</option>
+							 
+							<option value="S-LEGANR5L14DLprocureur_Republique_financier" >Justice : procureur de la République financier</option>
+							 
+							<option value="S-LEGANR5L14DLprojet_de_loi_consommation" >Economie : consommation</option>
+							 
+							<option value="S-LEGANR5L14DLnon-cumul_executif_local_depute_senateur" >Pouvoirs publics : interdiction du cumul des fonctions exécutives locales avec certains mandats</option>
+							 
+							<option value="S-LEGANR5L14DLjournee_nationale_Resistance_27_mai" >Anciens combattants : 27 mai, journée nationale de la Résistance</option>
+							 
+							<option value="S-LEGANR5L14DLrecherche_embryon_cellules_souches" >Recherche, sciences et techniques : recherche sur l'embryon et les cellules souches embryonnaires</option>
+							 
+							<option value="S-LEGANR5L14DLaction_publique_territoriale_metropoles" >Collectivités territoriales : action publique territoriale et métropoles</option>
+							 
+							<option value="S-LEGANR5L14DLelection_des_senateurs" >Pouvoirs publics : élection des sénateurs</option>
+							 
+							<option value="S-LEGANR5L14DLacces_logement_urbanisme_renove" >Logement et urbanisme : accès au logement et urbanisme rénové</option>
+							 
+							<option value="S-LEGANR5L14DLredonner_perspectives_emploi_industriel" >Economie : reconquête de l'économie réelle</option>
+							 
+							<option value="S-LEGANR5L14DLdomicile_handicapes_moteur_PTZ" >Questions sociales et santé : prêt à taux zéro pour l'aménagement du domicile des personnes handicapées moteur</option>
+							 
+							<option value="S-LEGANR5L14DLavenir_justice_systeme_retraites" >Travail : avenir et justice du système de retraites</option>
+							 
+							<option value="S-LEGANR5L14DLabrogation_conseiller_territorial" >Collectivités territoriales : abrogation du conseiller territorial</option>
+							 
+							<option value="S-LEGANR5L14DLparticipation_public_charte_environnement" >Environnement : participation du public (article 7 de la Charte de lenvironnement)</option>
+							 
+							<option value="S-LEGANR5L14DLloi_finances_2014" >Budget : loi de finances 2014</option>
+							 
+							<option value="S-LEGANR5L14DLvote_blanc_aux_elections" >Pouvoirs publics : reconnaissance du vote blanc</option>
+							 
+							<option value="S-LEGANR5L14DLplfss_2014" >Sécurité sociale : loi de financement 2014</option>
+							 
+							<option value="S-LEGANR5L14DLdeconnecter_prix_gaz_petrole" >Energie : déconnexion du prix du gaz de celui du pétrole</option>
+							 
+							<option value="S-LEGANR5L14DLligne_ferroviaire_Lyon-Turin" >Affaires étrangères : accord avec l'Italie sur la LGV Lyon-Turin</option>
+							 
+							<option value="S-LEGANR5L14DLprevenir_le_surendettement" >Economie : prévention du surendettement</option>
+							 
+							<option value="S-LEGANR5L14DLacces_soins_egal_territoire" >Questions sociales et santé : accès aux soins égal sur l'ensemble du territoire</option>
+							 
+							<option value="S-LEGANR5L14DLlogement_social_foncier_public" >Logement et urbanisme : logement social (2)</option>
+							 
+							<option value="S-LEGANR5L14DLsecurite_lutte_terrorisme" >Police et sécurité : sécurité et lutte contre le terrorisme</option>
+							 
+							<option value="S-LEGANR5L14DLrelatif_ville_et_cohesion_urbaine" >Logement et urbanisme : ville et cohésion urbaine</option>
+							 
+							<option value="S-LEGANR5L14DLloi_programmation_militaire_2014-2019" >Défense : loi de programmation militaire 2014-2019</option>
+							 
+							<option value="S-LEGANR5L14DLretablir_avantages_heures_supplementaires" >Travail : rétablissement des avantages liés aux heures supplémentaires</option>
+							 
+							<option value="S-LEGANR5L14DLsysteme_prostitutionnel_renforcement_lutte" >Société : lutte contre le système prostitutionnel</option>
+							 
+							<option value="S-LEGANR5L14DLcollectif_budgetaire_2013" >Budget : loi de finances rectificative 2013</option>
+							 
+							<option value="S-LEGANR5L14DLliberte_maires_rythmes_scolaires_premier_degre" >Education : libre choix des maires concernant les rythmes scolaires dans le premier degré</option>
+							 
+							<option value="S-LEGANR5L14DLreseaux_soins_mutuelles" >Questions sociales et santé : conventions entre organismes d'assurance maladie complémentaire et professionnels de santé</option>
+							 
+							<option value="S-LEGANR5L14DLavenir_agriculture_alimentation_foret" >Agriculture : avenir pour l'agriculture, l'alimentation et la forêt</option>
+							 
+							<option value="S-LEGANR5L14DLtroisieme_collectif_2012" >Budget : loi de finances rectificative 2012 (3)</option>
+							 
+							<option value="S-LEGANR5L14DLacces_logement_urbanisme_renove" >Agriculture : avenir pour l'agriculture, l'alimentation et la forêt</option>
+							 
+							<option value="S-LEGANR5L14DLegalite_femmes_hommes" >Société : égalité entre les femmes et les hommes</option>
+							 
+							<option value="S-LEGANR5L14DLencadrer_utlisation_produits_phytosanitaires" >Agriculture : encadrement de l'utilisation des produits phytosanitaires</option>
+							 
+							<option value="S-LEGANR5L14DLratifier_charte_langues_regionales_minoritaires" >Pouvoirs publics : Charte européenne des langues régionales ou minoritaires</option>
+							 
+							<option value="S-LEGANR5L14DLformation_professionnelle_emploi_democratie_sociale" >Travail : formation professionnelle, emploi et démocratie sociale</option>
+							 
+							<option value="S-LEGANR5L14DLCommerce_tpe" >Economie : artisanat, commerce et très petites entreprises</option>
+							 
+							<option value="S-LEGANR5L14DLenfants_reunionnais_metropole_1960_1970" >Outre-mer : enfants réunionnais placés en métropole dans les années 1960 et 1970</option>
+							 
+							<option value="S-LEGANR5L14DLacces_logement_urbanisme_renove" >Logement et urbanisme : accès au logement et urbanisme rénové (Loi ALUR)</option>
+							 
+							<option value="S-LEGANR5L14DLresponsabilite_maitres_ouvrage_sous-traitance" >Travail : lutte contre la concurrence sociale déloyale</option>
+							 
+							<option value="S-LEGANR5L14DLDéclaration_du_Gouvernement_prolongation_Centrafrique" >Déclaration du Gouvernement sur l'autorisation de la prolongation de l'intervention des forces françaises en Centrafrique</option>
+							 
+							<option value="S-LEGANR5L14DLDéclaration_politique_générale" >Déclaration de politique générale du Gouvernement</option>
+							 
+							<option value="S-LEGANR5L14DLDéclaration_du_Gouvernement_programme_stabilité" >Déclaration du Gouvernement sur le projet de programme de stabilité 2014-2017</option>
+							 
+							<option value="S-LEGANR5L14DLdroit_information_procedures_penales" >Justice : droit à l'information dans le cadre des procédures pénales</option>
+							 
+							<option value="S-LEGANR5L14DLeconomie_sociale_solidaire" >Economie : économie sociale et solidaire</option>
+							 
+							<option value="S-LEGANR5L14DLautorite_parentale_interet_enfant" >Famille : autorité parentale et intérêt de l'enfant</option>
+							 
+							<option value="S-LEGANR5L14DLmanquements_DCRI_meurtres_mars2012" >Police et sécurité : fonctionnement des services de renseignement dans le suivi et la surveillance des mouvements radicaux armés</option>
+							 
+							<option value="S-LEGANR5L14DLprojet_libre-echange_UE_USA" >Economie : projet d'accord de libre-échange UE-USA</option>
+							 
+							<option value="S-LEGANR5L14DLsuspension_poursuites_Henri_Guaino_outrage_magistrat" >Pouvoirs publics : suspension des poursuites pour outrage à magistrat contre M. Henri Guaino, député</option>
+							 
+							<option value="S-LEGANR5L14DLprevention_recidive_individualisation_peines" >Justice : prévention de la récidive et efficacité des sanctions pénales</option>
+							 
+							<option value="S-LEGANR5L14DLaccessibilite_batiments_transports_voirie_handicapes" >Questions sociales et santé : accessibilité des lieux, des transports et de la voirie pour les handicapés</option>
+							 
+							<option value="S-LEGANR5L14DLcontrat_de_generation" >Travail : contrat de génération</option>
+							 
+							<option value="S-LEGANR5L14DLadministration_politique_publique_rapatries_outre-mer" >Outre-mer : maintien d'une administration et de politiques publiques dédiées aux Français rapatriés d'outre-mer</option>
+							 
+							<option value="S-LEGANR5L14DLreforme_ferroviaire" >Transports : réforme ferroviaire</option>
+							 
+							<option value="S-LEGANR5L14DLcollectif_budgetaire_2014" >Budget : loi de finances rectificative 2014</option>
+							 
+							<option value="S-LEGANR5L14DLnomination_dirigeants_SNCF" >Transports : nomination des dirigeants de la SNCF</option>
+							 
+							<option value="S-LEGANR5L14DLplfss_rectificative_2014" >Budget : loi de finances rectificative 2014</option>
+							 
+							<option value="S-LEGANR5L14DLplfss_rectificative_2014" >Sécurité sociale : loi de financement rectificative 2014</option>
+							 
+							<option value="S-LEGANR5L14DLdelimitation_regions_elections" >Collectivités territoriales : délimitation des régions et calendrier électoral</option>
+							 
+							<option value="S-LEGANR5L14DLprincipe_precaution_ondes_electromagnetiques" >Questions sociales et santé : principe de précaution en matière d'ondes électromagnétiques</option>
+							 
+							<option value="S-LEGANR5L14DLsimplification_vie_entreprises" >Economie : simplification de la vie des entreprises</option>
+							 
+							<option value="S-LEGANR5L14DLadaptation_societe_vieillissement" >Questions sociales et santé : adaptation de la société au vieillissement</option>
+							 
+							<option value="S-LEGANR5L14DLdispositions_lutte_terrorisme" >Police et sécurité : dispositions relatives à la lutte contre le terrorisme</option>
+							 
+							<option value="S-LEGANR5L14DLtransition_energetique_croissance_verte" >Energie : transition énergétique pour la croissance verte</option>
+							 
+							<option value="S-LEGANR5L14DLvote_electronique_Francais_etranger_presidentielles_europeennes" >Pouvoirs publics : vote par voie électronique des Français de l'étranger à l'élection présidentielle et des représentants au Parlement européen</option>
+							 
+							<option value="S-LEGANR5L14DLtransition_energetique_croissance_verte" >Energie : transition </option>
+							 
+							<option value="S-LEGANR5L14DLloi_finances_2015" >Budget : loi de finances 2015</option>
+							 
+							<option value="S-LEGANR5L14DLloi_finances_2015" >Budget : loi de finances 2015
+</option>
+							 
+							<option value="S-LEGANR5L14DLloi_finances_1419" >Budget : finances publiques 2014-2019</option>
+							 
+							<option value="S-LEGANR5L14DLplfss_2015" >Sécurité sociale : loi de financement 2015</option>
+							 
+							<option value="S-LEGANR5L14DLplfss_2015" >Sécurité sociale : loi de financement 2015
+</option>
+							 
+							<option value="S-LEGANR5L14DLconseillers_prudhommes_designation" >Travail : désignation des prud'hommes</option>
+							 
+							<option value="S-LEGANR5L14DLdroit_IVG_France_Europe" >Questions sociales et santé : droit fondamental à l'IVG en France et en Europe</option>
+							 
+							<option value="S-LEGANR5L14DLprescription_action_publique_agressions_sexuelles" >Justice : délai de prescription de l'action publique des agressions sexuelles</option>
+							 
+							<option value="S-LEGANR5L14DLrecherche_oncologique_pediatrique_financement" >Questions sociales et santé : financement de la recherche oncologique pédiatrique</option>
+							 
+							<option value="S-LEGANR5L14DLreduire_cout_permis_conduire" >Transports : coût de passage de l'examen du permis de conduire</option>
+							 
+							<option value="S-LEGANR5L14DLreconnaissance_Etat_Palestine" >Affaires étrangères : reconnaissance de l'Etat de Palestine</option>
+							 
+							<option value="S-LEGANR5L14DLlutte_demarches_gestation_pour_autrui" >Justice : lutte contre les démarches engagées pour obtenir une GPA</option>
+							 
+							<option value="S-LEGANR5L14DLdeuxieme_collectif_budgetaire_2014" >Budget : loi de finances rectificative 2014 (2)</option>
+							 
+							<option value="S-LEGANR5L14DLreforme_asile" >Affaires étrangères : réforme de l'asile</option>
+													</select>
+					<div style="margin:10px;"></div>
+						<button title="Validez votre choix" type="submit" id="btn_searchscrut" class="btn btn-primary">OK</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>						
+		<div class="contenu-secondaire clearfix">
+		<nav>
+
+				<h2 class="sr-only">Navigation </h2>
+			
+				<ul class="menu-secondaire avec-scrollbar" style="max-height: 413px;">
+					<li>
+					<a href="http://www.assemblee-nationale.fr/13/scrutins/table-2011-2012.asp" class="lienhis">Scrutins de la 13e législature</a>
+					</li>
+					<li>
+					<a href="http://www.assemblee-nationale.fr/12/scrutins/table-2006-2007.asp" class="lienhis">Scrutins de la 12e législature</a>
+					</li>
+					<li>
+					<a href="http://www.assemblee-nationale.fr/11/seance/scrutins-02.asp" class="lienhis">Scrutins de la 11e législature</a>
+					</li>
+					
+					<li>
+					<a href="http://www.assemblee-nationale.fr/connaissance/scrutins.asp" class="lienhis">Fiche de connaissance: les scrutins et les procédures de vote</a>
+					</li>
+					
+					
+																													</ul>
+		</nav>
+		</div>
+		</div>
+</section>
+<section>
+	<div id="contenu-page" class="sans-haut clearfix">
+		<div class="contenu-principal pleine-largeur clearfix">
+			<div class="interieur-contenu-principal clearfix">
+				
+
+         
+
+<div class="pagination-bootstrap pagination-right pagination-small">
+	<ul>
+            
+	
+    
+        <li class="active"><span class="current">1</span></li>
+
+                      <li><a href="/scrutins/liste/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">2</a></li>
+                              <li><a href="/scrutins/liste/(offset)/200/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/200/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">3</a></li>
+                              <li><a href="/scrutins/liste/(offset)/300/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/300/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">4</a></li>
+                              <li><a href="/scrutins/liste/(offset)/400/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/400/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">5</a></li>
+                              <li><a href="/scrutins/liste/(offset)/500/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/500/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">6</a></li>
+            
+			<li><a href="/scrutins/liste/(offset)/900/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/900/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">10</a></li>
+	
+	        <li><a href="/scrutins/liste/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS"><span class="text">Suivant&nbsp;&raquo;</span></a></li>
+      	
+	</ul>
+</div>
+
+ 					<h2 class="sr-only">Scrutins</h2>		
+						
+													<table class="scrutins" id="listeScrutins">
+								<thead>
+									<tr class="titre">
+										<th rowspan="2" class="denom">N° de scrutin</th>
+										<th rowspan="2">Date de la séance</th>
+										<th rowspan="2">Objet du scrutin</th>
+										<th colspan="3">Résultats</th>
+									</tr>
+									<tr class="titre">
+
+										<td class="pour">Pour</td>
+										<td class="contre">Contre</td>
+										<td class="abs">Abstention volontaire</td>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+										<td class="denom">997</td>
+										<td>17/12/2014</td>
+										<td class="desc">l'ensemble du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (lecture définitive).  [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/997">analyse du scrutin</a>]</td>
+										<td class="pour">95</td>
+										<td class="contre SOR">56</td>
+										<td class="abs SOR">11</td>
+									</tr>		
+																	<tr>
+										<td class="denom">996</td>
+										<td>16/12/2014</td>
+										<td class="desc">l'amendement n° 2 du Gouvernement à l'article 31 quaterdecies du projet de loi de finances rectificative pour 2014 (seconde délibération). [<a href="http://www.assemblee-nationale.fr/14/dossiers/deuxieme_collectif_budgetaire_2014.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/996">analyse du scrutin</a>]</td>
+										<td class="pour">10</td>
+										<td class="contre SOR">4</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">995*</td>
+										<td>16/12/2014</td>
+										<td class="desc">l'ensemble du projet de loi de finances pour 2015 (nouvelle lecture) [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/995">analyse du scrutin</a>]</td>
+										<td class="pour">257</td>
+										<td class="contre SSO">222</td>
+										<td class="abs SSO">54</td>
+									</tr>		
+																	<tr>
+										<td class="denom">994*</td>
+										<td>16/12/2014</td>
+										<td class="desc">l'ensemble du projet de loi relatif à la réforme de l'asile (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/reforme_asile.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/994">analyse du scrutin</a>]</td>
+										<td class="pour">324</td>
+										<td class="contre SSO">188</td>
+										<td class="abs SSO">29</td>
+									</tr>		
+																	<tr>
+										<td class="denom">993</td>
+										<td>12/12/2014</td>
+										<td class="desc">l'article 15 du projet de loi de finances pour 2015 (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/993">analyse du scrutin</a>]</td>
+										<td class="pour">8</td>
+										<td class="contre SOR">4</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">992</td>
+										<td>09/12/2014</td>
+										<td class="desc">la motion de rejet préalable sur le projet de loi relatif à la réforme de l'asile. [<a href="http://www.assemblee-nationale.fr/14/dossiers/reforme_asile.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/992">analyse du scrutin</a>]</td>
+										<td class="pour">24</td>
+										<td class="contre SOR">32</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">991*</td>
+										<td>09/12/2014</td>
+										<td class="desc">le projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/991">analyse du scrutin</a>]</td>
+										<td class="pour">270</td>
+										<td class="contre SSO">242</td>
+										<td class="abs SSO">30</td>
+									</tr>		
+																	<tr>
+										<td class="denom">990*</td>
+										<td>09/12/2014</td>
+										<td class="desc">le projet de loi de finances rectificative pour 2014 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/deuxieme_collectif_budgetaire_2014.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/990">analyse du scrutin</a>]</td>
+										<td class="pour">298</td>
+										<td class="contre SSO">238</td>
+										<td class="abs SSO">17</td>
+									</tr>		
+																	<tr>
+										<td class="denom">989</td>
+										<td>08/12/2014</td>
+										<td class="desc">l'amendement n° 81 de M. Benoit à l'article 3 du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/989">analyse du scrutin</a>]</td>
+										<td class="pour">20</td>
+										<td class="contre SOR">26</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">988</td>
+										<td>08/12/2014</td>
+										<td class="desc">l'amendement n° 12 de M. Molac et l'amendement n° 53 de M. Le Fur à l'article 3 du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/988">analyse du scrutin</a>]</td>
+										<td class="pour">23</td>
+										<td class="contre SOR">27</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">987</td>
+										<td>08/12/2014</td>
+										<td class="desc">l'amendement n° 20 de M. Le Fur et l'amendement n° 59 de M. Benoit à l'article 1er du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/987">analyse du scrutin</a>]</td>
+										<td class="pour">19</td>
+										<td class="contre SOR">32</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">986</td>
+										<td>08/12/2014</td>
+										<td class="desc">l'amendement n° 29 de M. Hetzel et amendements identiques à l'article 1er du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/986">analyse du scrutin</a>]</td>
+										<td class="pour">21</td>
+										<td class="contre SOR">36</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">985</td>
+										<td>08/12/2014</td>
+										<td class="desc">les amendements n° 9 de M. Molac et n°51 de M. Le Fur à l'article 1er du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/985">analyse du scrutin</a>]</td>
+										<td class="pour">19</td>
+										<td class="contre SOR">41</td>
+										<td class="abs SOR">4</td>
+									</tr>		
+																	<tr>
+										<td class="denom">984</td>
+										<td>05/12/2014</td>
+										<td class="desc">l'amendement n° 325 ( 2e rect) de M. Jean-Louis Dumont après l'article 31 du projet de loi de finances rectificative pour 2014 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/deuxieme_collectif_budgetaire_2014.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/984">analyse du scrutin</a>]</td>
+										<td class="pour">4</td>
+										<td class="contre SOR">2</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">983</td>
+										<td>04/12/2014</td>
+										<td class="desc">la motion de rejet préalable de M. Bruno Le Roux de la proposition de loi visant à lutter contre les démarches engagées par les Français pour obtenir une gestation pour autrui.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/lutte_demarches_gestation_pour_autrui.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/983">analyse du scrutin</a>]</td>
+										<td class="pour">22</td>
+										<td class="contre SOR">16</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">982*</td>
+										<td>02/12/2014</td>
+										<td class="desc">la proposition de loi modifiant le délai de prescription de l'action publique des agressions sexuelles.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/prescription_action_publique_agressions_sexuelles.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/982">analyse du scrutin</a>]</td>
+										<td class="pour">191</td>
+										<td class="contre SSO">252</td>
+										<td class="abs SSO">23</td>
+									</tr>		
+																	<tr>
+										<td class="denom">981*</td>
+										<td>02/12/2014</td>
+										<td class="desc">la proposition de résolution portant sur la reconnaissance de l'État de Palestine (art.34-1 de la Constitution)  [<a href="http://www.assemblee-nationale.fr/14/dossiers/reconnaissance_Etat_Palestine.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/981">analyse du scrutin</a>]</td>
+										<td class="pour">339</td>
+										<td class="contre SSO">151</td>
+										<td class="abs SSO">16</td>
+									</tr>		
+																	<tr>
+										<td class="denom">980</td>
+										<td>01/12/2014</td>
+										<td class="desc">l'amendement n° 8 de M. Le Fur et les amendements identiques n° 15 de M. Lurton, n° 16 de M. Charroux et n°18 de M. Cinieri du projet de loi de financement de la sécurité sociale (lecture définitive).  [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/980">analyse du scrutin</a>]</td>
+										<td class="pour">12</td>
+										<td class="contre SOR">20</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">979</td>
+										<td>27/11/2014</td>
+										<td class="desc">l'amendement n° 11 de Mme Pochon à l'article premier de la proposition de loi visant à accélérer, simplifier et réduire le coût du passage de l'examen du permis de conduire.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/reduire_cout_permis_conduire.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/979">analyse du scrutin</a>]</td>
+										<td class="pour">15</td>
+										<td class="contre SOR">13</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">978</td>
+										<td>27/11/2014</td>
+										<td class="desc">l'amendement n° 4 de Mme Pinville à l'article premier de la proposition de loi relative au financement de la recherche oncologique pédiatrique par l'industrie pharmaceutique.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/recherche_oncologique_pediatrique_financement.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/978">analyse du scrutin</a>]</td>
+										<td class="pour">18</td>
+										<td class="contre SOR">15</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">977</td>
+										<td>27/11/2014</td>
+										<td class="desc">l'amendement n°3 de Mme Capdevielle à l'article premier sur la proposition de loi, adoptée par le Sénat, modifiant le délai de prescription de l'action publique des agressions sexuelles.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/prescription_action_publique_agressions_sexuelles.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/977">analyse du scrutin</a>]</td>
+										<td class="pour">20</td>
+										<td class="contre SOR">28</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">976</td>
+										<td>27/11/2014</td>
+										<td class="desc">la motion de rejet préalable de M. Bruno Le Roux sur la proposition de loi, adoptée par le Sénat, modifiant le délai de prescription de l'action publique des agressions sexuelles.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/prescription_action_publique_agressions_sexuelles.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/976">analyse du scrutin</a>]</td>
+										<td class="pour">30</td>
+										<td class="contre SOR">31</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">975</td>
+										<td>26/11/2014</td>
+										<td class="desc">la proposition de résolution visant à réaffirmer le droit fondamental à l'Interruption Volontaire de Grossesse en France et en Europe. [<a href="http://www.assemblee-nationale.fr/14/dossiers/droit_IVG_France_Europe.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/975">analyse du scrutin</a>]</td>
+										<td class="pour">143</td>
+										<td class="contre SOR">7</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">974</td>
+										<td>25/11/2014</td>
+										<td class="desc">l'amendement n° 105 de la commission des affaires sociales et l'amendement identique n° 182 de M. Le Roux à l'article n° 61 A au projet de loi de financement de la sécurité sociale pour 2015 (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/974">analyse du scrutin</a>]</td>
+										<td class="pour">68</td>
+										<td class="contre SOR">55</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">973</td>
+										<td>25/11/2014</td>
+										<td class="desc">l'amendement n° 153 de M. Vercamer à l'article n° 61 A au projet de loi de financement de la sécurité sociale pour 2015 (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/973">analyse du scrutin</a>]</td>
+										<td class="pour">64</td>
+										<td class="contre SOR">64</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">972</td>
+										<td>25/11/2014</td>
+										<td class="desc">l'amendement n° 45 de suppression de la commission des affaires sociales et les amendements identiques suivants à l'article n°49 bis au projet de loi de financement de la sécurité sociale pour 2015 (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/972">analyse du scrutin</a>]</td>
+										<td class="pour">25</td>
+										<td class="contre SOR">15</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">971</td>
+										<td>25/11/2014</td>
+										<td class="desc">le sous-amendement n° 201 rectifié de M. Decool et les sous-amendements identiques suivants à l'article n° 43 ter au projet de loi de financement de la sécurité sociale pour 2015 (nouvelle lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/971">analyse du scrutin</a>]</td>
+										<td class="pour">14</td>
+										<td class="contre SOR">20</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">970*</td>
+										<td>25/11/2014</td>
+										<td class="desc">l'ensemble du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/970">analyse du scrutin</a>]</td>
+										<td class="pour">277</td>
+										<td class="contre SSO">253</td>
+										<td class="abs SSO">33</td>
+									</tr>		
+																	<tr>
+										<td class="denom">969</td>
+										<td>24/11/2014</td>
+										<td class="desc">l'amendement n° 180 de Mme Orliac à l'article 65 du projet de loi de financement de la sécurité sociale pour 2015 (nouvelle lecture) [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/969">analyse du scrutin</a>]</td>
+										<td class="pour">17</td>
+										<td class="contre SOR">12</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">968</td>
+										<td>24/11/2014</td>
+										<td class="desc">l'amendement n° 191 du Gouvernement à l'article 8 ter du projet de loi de financement de la sécurité sociale pour 2015 (nouvelle lecture) [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/968">analyse du scrutin</a>]</td>
+										<td class="pour">17</td>
+										<td class="contre SOR">11</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">967</td>
+										<td>20/11/2014</td>
+										<td class="desc">l'amendement n° 2 de Mme Fraysse à l'article 2 du projet de loi relatif à la désignation des conseillers prud'hommes. [<a href="http://www.assemblee-nationale.fr/14/dossiers/conseillers_prudhommes_designation.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/967">analyse du scrutin</a>]</td>
+										<td class="pour">2</td>
+										<td class="contre SOR">7</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">966</td>
+										<td>20/11/2014</td>
+										<td class="desc">les amendements identiques de suppression n° 1 de Mme Fraysse et n° 7 de M. Cavard à l'article premier du projet de loi relatif à la désignation des conseillers prud'hommes. [<a href="http://www.assemblee-nationale.fr/14/dossiers/conseillers_prudhommes_designation.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/966">analyse du scrutin</a>]</td>
+										<td class="pour">2</td>
+										<td class="contre SOR">7</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">965</td>
+										<td>20/11/2014</td>
+										<td class="desc">les amendements identiques n° 97 de M. Bleunven et n° 125 de M. Benoit à l'article 3 du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/965">analyse du scrutin</a>]</td>
+										<td class="pour">17</td>
+										<td class="contre SOR">21</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">964</td>
+										<td>20/11/2014</td>
+										<td class="desc">l'amendement n° 119 rectifié de M. Benoit à l'article 3 du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/964">analyse du scrutin</a>]</td>
+										<td class="pour">15</td>
+										<td class="contre SOR">23</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">963</td>
+										<td>20/11/2014</td>
+										<td class="desc">l'amendement n° 3 de M. Molac à l'article 3 du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/963">analyse du scrutin</a>]</td>
+										<td class="pour">21</td>
+										<td class="contre SOR">27</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">962</td>
+										<td>20/11/2014</td>
+										<td class="desc">l'amendement de suppression n° 80 de M. Dolez et les amendements identiques à l'article 3 du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/962">analyse du scrutin</a>]</td>
+										<td class="pour">7</td>
+										<td class="contre SOR">23</td>
+										<td class="abs SOR">3</td>
+									</tr>		
+																	<tr>
+										<td class="denom">961</td>
+										<td>19/11/2014</td>
+										<td class="desc">l'amendement n°110 de M. Roman à l'article premier du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/961">analyse du scrutin</a>]</td>
+										<td class="pour">15</td>
+										<td class="contre SOR">50</td>
+										<td class="abs SOR">3</td>
+									</tr>		
+																	<tr>
+										<td class="denom">960</td>
+										<td>19/11/2014</td>
+										<td class="desc">l'amendement n°9 de M. Molac à l'article premier du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/960">analyse du scrutin</a>]</td>
+										<td class="pour">30</td>
+										<td class="contre SOR">57</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">959</td>
+										<td>19/11/2014</td>
+										<td class="desc">l'amendement n°122 de M. Bies à l'article premier du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/959">analyse du scrutin</a>]</td>
+										<td class="pour">6</td>
+										<td class="contre SOR">62</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">958</td>
+										<td>19/11/2014</td>
+										<td class="desc">l'amendement n° 1 de M. Molac à l'article premier du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/958">analyse du scrutin</a>]</td>
+										<td class="pour">21</td>
+										<td class="contre SOR">47</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">957</td>
+										<td>19/11/2014</td>
+										<td class="desc">l'amendement n° 75 de M. Dolez et les amendements identiques suivants à l'article premier du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/957">analyse du scrutin</a>]</td>
+										<td class="pour">31</td>
+										<td class="contre SOR">51</td>
+										<td class="abs SOR">4</td>
+									</tr>		
+																	<tr>
+										<td class="denom">956</td>
+										<td>18/11/2014</td>
+										<td class="desc">l'amendement n° 74 de M. Dolez et l'amendement identique suivant à l'article 1er A du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral (deuxième lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/956">analyse du scrutin</a>]</td>
+										<td class="pour">29</td>
+										<td class="contre SOR">69</td>
+										<td class="abs SOR">7</td>
+									</tr>		
+																	<tr>
+										<td class="denom">955*</td>
+										<td>18/11/2014</td>
+										<td class="desc">l'ensemble du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/955">analyse du scrutin</a>]</td>
+										<td class="pour">266</td>
+										<td class="contre SSO">247</td>
+										<td class="abs SSO">56</td>
+									</tr>		
+																	<tr>
+										<td class="denom">954</td>
+										<td>06/11/2014</td>
+										<td class="desc">l'amendement n° 430 de M. Tian après l'article 59 du projet de loi de finances pour 2015 - Mission santé.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/954">analyse du scrutin</a>]</td>
+										<td class="pour">6</td>
+										<td class="contre SOR">8</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">953</td>
+										<td>06/11/2014</td>
+										<td class="desc">l'amendement n° 512 de la commission des finances et les amendements identiques suivants à l'article 47 du projet de loi de finances pour 2015 - Mission agriculture, alimentation, forêt et affaires rurales.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/953">analyse du scrutin</a>]</td>
+										<td class="pour">18</td>
+										<td class="contre SOR">22</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">952</td>
+										<td>06/11/2014</td>
+										<td class="desc">l'amendement n° 491 de M. Benoit et l'amendement identique n° 530 de M. de Courson à l'article 47 du projet de loi de finances pour 2015 - Mission agriculture, alimentation, forêt et affaires rurales.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/952">analyse du scrutin</a>]</td>
+										<td class="pour">14</td>
+										<td class="contre SOR">26</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">951</td>
+										<td>06/11/2014</td>
+										<td class="desc">l'amendement n° 285 de M. Herth et les amendements de suppression identiques à l'article 47 du projet de loi de finances pour 2015 - Mission agriculture, alimentation, forêt et affaires rurales.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/951">analyse du scrutin</a>]</td>
+										<td class="pour">20</td>
+										<td class="contre SOR">24</td>
+										<td class="abs SOR">4</td>
+									</tr>		
+																	<tr>
+										<td class="denom">950</td>
+										<td>05/11/2014</td>
+										<td class="desc">l'amendements n° 435 de M. Saddier à l'article 32 et Etat B du projet de loi de finances pour 2015 - Mission Economie.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/950">analyse du scrutin</a>]</td>
+										<td class="pour">7</td>
+										<td class="contre SOR">20</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">949</td>
+										<td>05/11/2014</td>
+										<td class="desc">les amendements n° 284 de M. Carré et n° 383 de M. Piron de supression à l'article 52 du projet de loi de finances pour 2015 - Mission Egalité des territoires et logement.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/949">analyse du scrutin</a>]</td>
+										<td class="pour">20</td>
+										<td class="contre SOR">33</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">948</td>
+										<td>05/11/2014</td>
+										<td class="desc">l'amendement n° 401 de M. Larrivé après l'article 57 du projet de loi de finances pour 2015 - Mission Politiques des territoires.  [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/948">analyse du scrutin</a>]</td>
+										<td class="pour">7</td>
+										<td class="contre SOR">24</td>
+										<td class="abs SOR">3</td>
+									</tr>		
+																	<tr>
+										<td class="denom">947</td>
+										<td>03/11/2014</td>
+										<td class="desc">l'amendement n° 335 de Mme Bouziane à l'article 32 et État B du projet de loi de finances pour 2015 - Mission Travail et emploi [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/947">analyse du scrutin</a>]</td>
+										<td class="pour">13</td>
+										<td class="contre SOR">24</td>
+										<td class="abs SOR">4</td>
+									</tr>		
+																	<tr>
+										<td class="denom">946</td>
+										<td>28/10/2014</td>
+										<td class="desc">les amendements identiques n° 72 de M. Tetart et n° 171 de M. Dufau à l'article 32 et État B du projet de loi de finances pour 2015 - Mission Aide publique au développement. [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/946">analyse du scrutin</a>]</td>
+										<td class="pour">36</td>
+										<td class="contre SOR">4</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">945*</td>
+										<td>28/10/2014</td>
+										<td class="desc">l'ensemble du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/945">analyse du scrutin</a>]</td>
+										<td class="pour">270</td>
+										<td class="contre SSO">245</td>
+										<td class="abs SSO">51</td>
+									</tr>		
+																	<tr>
+										<td class="denom">944</td>
+										<td>24/10/2014</td>
+										<td class="desc">l'amendement n° 324 rectifié de Mme Clergeau et l'amendement identique n° 812 (rect) de M. Le Roux avant l'article 61 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/944">analyse du scrutin</a>]</td>
+										<td class="pour">18</td>
+										<td class="contre SOR">11</td>
+										<td class="abs SOR">3</td>
+									</tr>		
+																	<tr>
+										<td class="denom">943</td>
+										<td>24/10/2014</td>
+										<td class="desc">le sous-amendement n° 945 du Gouvernement à l'amendement n° 324 rectifié de Mme Clergeau et à l'amendement identique n° 812 (rect) de M. Le Roux avant l'article 61 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/943">analyse du scrutin</a>]</td>
+										<td class="pour">19</td>
+										<td class="contre SOR">10</td>
+										<td class="abs SOR">4</td>
+									</tr>		
+																	<tr>
+										<td class="denom">942</td>
+										<td>24/10/2014</td>
+										<td class="desc">l'amendement n° 572 de M. Vercamer avant l'article 61 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/942">analyse du scrutin</a>]</td>
+										<td class="pour">8</td>
+										<td class="contre SOR">18</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">941</td>
+										<td>24/10/2014</td>
+										<td class="desc">l'amendement n° 305 de M. Véran et l'amendement identique n° 447 de Mme Lemorton après l'article 43 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/941">analyse du scrutin</a>]</td>
+										<td class="pour">21</td>
+										<td class="contre SOR">8</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">940</td>
+										<td>24/10/2014</td>
+										<td class="desc">l'amendement n° 944 du Gouvernement après l'article 29 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/940">analyse du scrutin</a>]</td>
+										<td class="pour">23</td>
+										<td class="contre SOR">3</td>
+										<td class="abs SOR">5</td>
+									</tr>		
+																	<tr>
+										<td class="denom">939</td>
+										<td>23/10/2014</td>
+										<td class="desc">l'amendement n° 177 de M. Bapt, rapporteur de la commission des affaires sociales, à l'article 66 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/939">analyse du scrutin</a>]</td>
+										<td class="pour">39</td>
+										<td class="contre SOR">0</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">938</td>
+										<td>23/10/2014</td>
+										<td class="desc">l'amendement n° 130 de M. Door et identiques à l'article 28 et annexe B du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/938">analyse du scrutin</a>]</td>
+										<td class="pour">18</td>
+										<td class="contre SOR">24</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">937</td>
+										<td>23/10/2014</td>
+										<td class="desc">l'amendement n° 499 de M. Tian et identiques à l'article 28 et annexe B du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/937">analyse du scrutin</a>]</td>
+										<td class="pour">18</td>
+										<td class="contre SOR">20</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">936</td>
+										<td>23/10/2014</td>
+										<td class="desc">l'amendement n° 42 de M. Le Fur, l'amendement identique n°100 de Mme Nachury, l'amendement identique n°119 de M. Door, l'amendement identique n°183 de M. Accoyer, l'amendement identique n° 289 de M. Myard, l'amendement identique n° 376 de M. Tian et l'amendement  identique n°452 de M. Vercamer à l'article 14 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/936">analyse du scrutin</a>]</td>
+										<td class="pour">14</td>
+										<td class="contre SOR">26</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">935</td>
+										<td>23/10/2014</td>
+										<td class="desc">l'amendement n° 70 de M. Sebaoun et l'amendement 792 de Mme Tallard après l'article 12 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/935">analyse du scrutin</a>]</td>
+										<td class="pour">16</td>
+										<td class="contre SOR">36</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">934</td>
+										<td>23/10/2014</td>
+										<td class="desc">l'amendement n° 793 (rect) de Mme Carrey-Conte après l'article 12 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/934">analyse du scrutin</a>]</td>
+										<td class="pour">20</td>
+										<td class="contre SOR">35</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">933</td>
+										<td>23/10/2014</td>
+										<td class="desc">l'amendement n° 282 de M. Le Roch et n° 450 de Mme Le Callennec après l'article 12 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/933">analyse du scrutin</a>]</td>
+										<td class="pour">38</td>
+										<td class="contre SOR">4</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">932</td>
+										<td>22/10/2014</td>
+										<td class="desc">l'amendement n° 789 de M. Germain après l'article 7 du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/932">analyse du scrutin</a>]</td>
+										<td class="pour">21</td>
+										<td class="contre SOR">66</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">931</td>
+										<td>21/10/2014</td>
+										<td class="desc">la motion de rejet préalable du projet de loi de financement de la sécurité sociale pour 2015 (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/plfss_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/931">analyse du scrutin</a>]</td>
+										<td class="pour">23</td>
+										<td class="contre SOR">57</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">930*</td>
+										<td>21/10/2014</td>
+										<td class="desc">le projet de loi de finances pour 2015 (première partie) [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/930">analyse du scrutin</a>]</td>
+										<td class="pour">266</td>
+										<td class="contre SSO">245</td>
+										<td class="abs SSO">56</td>
+									</tr>		
+																	<tr>
+										<td class="denom">929*</td>
+										<td>21/10/2014</td>
+										<td class="desc">le projet de loi de programmation des finances publiques 2014-2019 [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_1419.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/929">analyse du scrutin</a>]</td>
+										<td class="pour">263</td>
+										<td class="contre SSO">245</td>
+										<td class="abs SSO">56</td>
+									</tr>		
+																	<tr>
+										<td class="denom">928</td>
+										<td>20/10/2014</td>
+										<td class="desc">l'amendement n° 4 du Gouvernement à l'article 15 du projet de loi de finances pour 2015 (seconde délibération) [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/928">analyse du scrutin</a>]</td>
+										<td class="pour">13</td>
+										<td class="contre SOR">8</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">927</td>
+										<td>20/10/2014</td>
+										<td class="desc">l'amendement n° 3 du Gouvernement à l'article 15 du projet de loi de finances pour 2015 (seconde délibération) [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/927">analyse du scrutin</a>]</td>
+										<td class="pour">13</td>
+										<td class="contre SOR">8</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">926</td>
+										<td>20/10/2014</td>
+										<td class="desc">l'amendement n° 884 du Gouvernement et l'amendement identique n° 886 de Mme Sas à l'article 20 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/926">analyse du scrutin</a>]</td>
+										<td class="pour">16</td>
+										<td class="contre SOR">7</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">925</td>
+										<td>20/10/2014</td>
+										<td class="desc">l'amendement n° 504 de M. Giraud à l'article 17 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/925">analyse du scrutin</a>]</td>
+										<td class="pour">13</td>
+										<td class="contre SOR">31</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">924</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n° 230 de M. Carré à l'article 15 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/924">analyse du scrutin</a>]</td>
+										<td class="pour">5</td>
+										<td class="contre SOR">14</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">923</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n° 500 de M. Mariton après l'article 9 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/923">analyse du scrutin</a>]</td>
+										<td class="pour">3</td>
+										<td class="contre SOR">18</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">922</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n°579 de M. Coronado après l'article 6 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/922">analyse du scrutin</a>]</td>
+										<td class="pour">7</td>
+										<td class="contre SOR">16</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">921</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n°694 de M. Sansu après l'article 6 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/921">analyse du scrutin</a>]</td>
+										<td class="pour">9</td>
+										<td class="contre SOR">15</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">920</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n°556 de M. Alauzet après l'article 6 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/920">analyse du scrutin</a>]</td>
+										<td class="pour">8</td>
+										<td class="contre SOR">16</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">919</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n°565 de M. Alauzet après l'article 6 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/919">analyse du scrutin</a>]</td>
+										<td class="pour">7</td>
+										<td class="contre SOR">14</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">918</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n°595 de M. Emmanuelli après l'article 6 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/918">analyse du scrutin</a>]</td>
+										<td class="pour">9</td>
+										<td class="contre SOR">13</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">917</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n°190 de M. Emmanuelli après l'article 6 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/917">analyse du scrutin</a>]</td>
+										<td class="pour">10</td>
+										<td class="contre SOR">12</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">916</td>
+										<td>17/10/2014</td>
+										<td class="desc">l'amendement n° 238 de la commision des finances après l'article 6 du projet de loi de finances pour 2015 (1ère lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/916">analyse du scrutin</a>]</td>
+										<td class="pour">3</td>
+										<td class="contre SOR">18</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">915</td>
+										<td>16/10/2014</td>
+										<td class="desc">l'amendement n° 666 de M. Noguès à l'article 5 du projet de loi de finances pour 2015 (1ère lecture) [<a href="http://www.assemblee-nationale.fr/14/dossiers/loi_finances_2015.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/915">analyse du scrutin</a>]</td>
+										<td class="pour">26</td>
+										<td class="contre SOR">31</td>
+										<td class="abs SOR">2</td>
+									</tr>		
+																	<tr>
+										<td class="denom">914*</td>
+										<td>14/10/2014</td>
+										<td class="desc">l'ensemble du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture).  [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/914">analyse du scrutin</a>]</td>
+										<td class="pour">314</td>
+										<td class="contre SSO">219</td>
+										<td class="abs SSO">32</td>
+									</tr>		
+																	<tr>
+										<td class="denom">913</td>
+										<td>10/10/2014</td>
+										<td class="desc">l'amendement n°1592 de M. Carvalho à l'article 29 du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture).  [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/913">analyse du scrutin</a>]</td>
+										<td class="pour">2</td>
+										<td class="contre SOR">27</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">912</td>
+										<td>10/10/2014</td>
+										<td class="desc">l'amendement n°1591 de M. Carvalho à l'article 28 du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture).  [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/912">analyse du scrutin</a>]</td>
+										<td class="pour">3</td>
+										<td class="contre SOR">29</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">911</td>
+										<td>09/10/2014</td>
+										<td class="desc">l'amendement n° 1 de M. Popelin à l'article premier de la proposition de loi organique visant à instaurer le vote par voie électronique des Français de l'étranger à l'élection présidentielle et à l'élection des représentants au Parlement européen [<a href="http://www.assemblee-nationale.fr/14/dossiers/vote_electronique_Francais_etranger_presidentielles_europeennes.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/911">analyse du scrutin</a>]</td>
+										<td class="pour">19</td>
+										<td class="contre SOR">9</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">910</td>
+										<td>08/10/2014</td>
+										<td class="desc">l'amendement n° 755 de M. de Ganay et l'amendement identique n° 1683 de M. de Courson à l'article premier du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/910">analyse du scrutin</a>]</td>
+										<td class="pour">15</td>
+										<td class="contre SOR">37</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">909</td>
+										<td>08/10/2014</td>
+										<td class="desc">l'amendement n° 1871 de M. Abad à l'article premier du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/909">analyse du scrutin</a>]</td>
+										<td class="pour">15</td>
+										<td class="contre SOR">36</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">908</td>
+										<td>08/10/2014</td>
+										<td class="desc">l'amendement n° 350 de M. Aubert et l'amendement identique n° 11 de M. Lamblin à l'article premier du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/908">analyse du scrutin</a>]</td>
+										<td class="pour">13</td>
+										<td class="contre SOR">42</td>
+										<td class="abs SOR">4</td>
+									</tr>		
+																	<tr>
+										<td class="denom">907</td>
+										<td>07/10/2014</td>
+										<td class="desc">l'amendement n° 1581 de M. Carvalho et les amendements identiques à l'article premier du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/907">analyse du scrutin</a>]</td>
+										<td class="pour">11</td>
+										<td class="contre SOR">24</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">906</td>
+										<td>06/10/2014</td>
+										<td class="desc">l'amendement n°641 de M. Aubert et les amendements identiques à l'article premier du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/906">analyse du scrutin</a>]</td>
+										<td class="pour">9</td>
+										<td class="contre SOR">31</td>
+										<td class="abs SOR">1</td>
+									</tr>		
+																	<tr>
+										<td class="denom">905</td>
+										<td>01/10/2014</td>
+										<td class="desc">la motion de renvoi en commission, présentée par M. Christian Jacob, du projet de loi relatif à la transition énergétique pour la croissance verte (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/transition_energetique_croissance_verte.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/905">analyse du scrutin</a>]</td>
+										<td class="pour">28</td>
+										<td class="contre SOR">42</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">904</td>
+										<td>17/09/2014</td>
+										<td class="desc">l'amendement n° 125 de M. HABIB à l'article 4 du projet de loi renforçant les dispositions relatives à la lutte contre le terrorisme.   [<a href="http://www.assemblee-nationale.fr/14/dossiers/dispositions_lutte_terrorisme.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/904">analyse du scrutin</a>]</td>
+										<td class="pour">9</td>
+										<td class="contre SOR">21</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">903</td>
+										<td>17/09/2014</td>
+										<td class="desc">l'amendement n° 36 de M. de Rugy à l'article 4 du projet de loi renforçant les dispositions relatives à la lutte contre le terrorisme.   [<a href="http://www.assemblee-nationale.fr/14/dossiers/dispositions_lutte_terrorisme.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/903">analyse du scrutin</a>]</td>
+										<td class="pour">4</td>
+										<td class="contre SOR">13</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">902*</td>
+										<td>17/09/2014</td>
+										<td class="desc">l'ensemble du projet de loi relatif à l'adaptation de la société au vieillissement. [<a href="http://www.assemblee-nationale.fr/14/dossiers/adaptation_societe_vieillissement.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/902">analyse du scrutin</a>]</td>
+										<td class="pour">302</td>
+										<td class="contre SSO">181</td>
+										<td class="abs SSO">23</td>
+									</tr>		
+																	<tr>
+										<td class="denom">901</td>
+										<td>16/09/2014</td>
+										<td class="desc">la déclaration de politique générale du Gouvernement de M. Manuel Valls (application de l'article 49, alinéa premier, de la Constitution).  [<a href="/scrutins/detail/(legislature)/14/(num)/901">analyse du scrutin</a>]</td>
+										<td class="pour">269</td>
+										<td class="contre SSV">244</td>
+										<td class="abs SSV">53</td>
+									</tr>		
+																	<tr>
+										<td class="denom">900</td>
+										<td>09/09/2014</td>
+										<td class="desc">l'amendement n°616 de Mme Delaunay retiré par son auteur et repris par M. Jacquat à l'article 2 du projet de loi relatif à l'adaptation de la société au vieillissement (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/adaptation_societe_vieillissement.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/900">analyse du scrutin</a>]</td>
+										<td class="pour">20</td>
+										<td class="contre SOR">39</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">899</td>
+										<td>09/09/2014</td>
+										<td class="desc">la motion de renvoi en commission, présentée par M. Christian Jacob, du projet de loi relatif à l'adaptation de la société au vieillissement (première lecture). [<a href="http://www.assemblee-nationale.fr/14/dossiers/adaptation_societe_vieillissement.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/899">analyse du scrutin</a>]</td>
+										<td class="pour">63</td>
+										<td class="contre SOR">94</td>
+										<td class="abs SOR">0</td>
+									</tr>		
+																	<tr>
+										<td class="denom">898*</td>
+										<td>23/07/2014</td>
+										<td class="desc">l'ensemble du projet de loi relatif à la délimitation des régions, aux élections régionales et départementales et modifiant le calendrier électoral [<a href="http://www.assemblee-nationale.fr/14/dossiers/delimitation_regions_elections.asp">dossier</a>] [<a href="/scrutins/detail/(legislature)/14/(num)/898">analyse du scrutin</a>]</td>
+										<td class="pour">261</td>
+										<td class="contre SSO">205</td>
+										<td class="abs SSO">85</td>
+									</tr>		
+																</tbody>
+							</table>
+											
+
+         
+
+<div class="pagination-bootstrap pagination-right pagination-small">
+	<ul>
+            
+	
+    
+        <li class="active"><span class="current">1</span></li>
+
+                      <li><a href="/scrutins/liste/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">2</a></li>
+                              <li><a href="/scrutins/liste/(offset)/200/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/200/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">3</a></li>
+                              <li><a href="/scrutins/liste/(offset)/300/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/300/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">4</a></li>
+                              <li><a href="/scrutins/liste/(offset)/400/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/400/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">5</a></li>
+                              <li><a href="/scrutins/liste/(offset)/500/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/500/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">6</a></li>
+            
+			<li><a href="/scrutins/liste/(offset)/900/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/900/(legislature)/14/(type)/TOUS/(idDossier)/TOUS">10</a></li>
+	
+	        <li><a href="/scrutins/liste/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS" data-uri-suffix="/(offset)/100/(legislature)/14/(type)/TOUS/(idDossier)/TOUS"><span class="text">Suivant&nbsp;&raquo;</span></a></li>
+      	
+	</ul>
+</div>
+
+ 			</div>		
+		</div>
+	</div>
+</section>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+		
+        <footer>
+            <div id="footer-wrap">
+                <div id="footer-content">
+                    <div id="footer-tools">
+                        <ul>
+                            <li><a href="#top" class="bouton-retourner-haut">Retour haut de page</a></li>
+                            <li><a href="javascript:window.print();" class="bouton-imprimer">Imprimer</a></li>
+                        </ul>
+                    </div>
+                    <div id="footer-links">
+                        <dl id="footer-contacts">
+                            <dt>CONTACTEZ-NOUS</dt>
+                            <dd><a href="http://presidence.assemblee-nationale.fr/">Le Président de l'Assemblée nationale</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/qui/xml/liste_alpha.asp?legislature=14">Les députés</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/faq.asp">Le webmestre</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/faq.asp">Renseignements</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/presse/index.asp">Contact presse</a></dd>
+                        </dl>
+                        <dl id="footer-navigation">
+                            <dt>NAVIGATION</dt>
+                            <dd><a href="http://www.assemblee-nationale.fr/">Accueil</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/">Connaître l'Assemblée nationale</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/">Organisation et travaux</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/">Les députés</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/">Informations pratiques</a></dd>
+                        </dl>
+                        <dl id="footer-acces">
+                            <dt>ACCÈS DIRECTS</dt>
+                            <dd><a href="http://www.assemblee-nationale.fr/agendas/index.asp">Agendas</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/14/liste/texte_examine.asp">Textes examinés</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/14/liste/texte_ordre_du_jour.asp">Textes inscrits à l'ordre du jour</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/14/liste/rapport_information.asp">Rapports d'information</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/14/liste/rapport_application_lois.asp">Rapports sur l'application des lois</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/europe/">Union européenne</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/international/index.asp">Relations internationales</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/controle/questions.asp">Questions écrites et orales</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/presse/index.asp">Espace presse et dépêches AFP</a></dd>
+                        </dl>
+                        <dl id="footer-services">
+                            <dt>SERVICES EN LIGNE</dt>
+                            <dd><a href="http://www.assemblee-nationale.fr/video/">Le portail vidéo</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/rss/">RSS</a></dd>
+                            <dd><a href="http://www.assemblee.mobi/">Version mobile</a></dd>
+                            <dd><a href="http://boutique.assemblee-nationale.fr/vmchk.html">La Boutique</a></dd>
+                            <dd><a href="http://etudesimpact.assemblee-nationale.fr/">Réagir aux études d'impact</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/marches-publics/index.asp">Marchés publics</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/abonnement.asp">S'abonner aux services en ligne</a></dd>
+                        </dl>
+                        <dl id="footer-liens">
+                            <dt>LIENS</dt>
+                            <dd><a href="http://www.parlementdesenfants.fr/">Le Parlement des enfants</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/14/tribun/xml/liste_sites.asp">Les sites des députés</a></dd>
+                            <dd><a href="http://www.assemblee-nationale.fr/liens.asp">Sites officiels</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		
+        <div id="toolbar">
+					<a href="/langues/welcome-to-the-english-website-of-the-french-national-assembly">English</a>&nbsp;
+			<a class="btn" href="/extuser/login"><i class="fa fa-user"></i> S'authentifier</a>
+		            <ul id="toolbar-accessibility">
+                <li><a href="#navigation" accesskey="9">Aller au menu</a></li>
+                <li><a href="#page" accesskey="s">Aller au contenu</a></li>
+                <li><a href="#recherchechampssaisie" accesskey="4">Aller à la recherche</a></li>
+                <li><a href="#" accesskey="0">Politique d’accessibilité</a></li>
+                <li><a href="/index.asp" accesskey="1">Accueil</a></li>
+                <li><a href="/plan.asp" accesskey="3">Plan du site</a></li>
+                <li><a href="/aide.asp" accesskey="6">Aide</a></li>
+                <li><a href="/ecrire.asp" accesskey="7">Contact</a></li>
+            </ul>
+
+			<div id="toolbar-search">
+                <form method="post" action="/recherche/resultats_recherche">
+					<input type="text" name="contenu" value="" placeholder="Recherche..." autocomplete="off" />
+                    <input type="submit" value="OK" />
+
+					
+			   </form>
+            </div>
+		</div>
+		
+		<a id="to-top" class="btn-large" href="#top" title="Retour haut de page"><i class="icon-chevron-up icon-white"></i><span class="sr-only">Retour haut de page</span></a>
+		
+        
+        
+                        <script type="text/javascript" src="/extension/common/design/an/javascript/jquery-1.7.2.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+(function($) {
+    var _rootUrl = '/', _serverUrl = _rootUrl + 'ezjscore/', _seperator = '@SEPERATOR$',
+        _prefUrl = _rootUrl + 'user/preferences';
+
+    // FIX: Ajax is broken on IE8 / IE7 on jQuery 1.4.x as it's trying to use the broken window.XMLHttpRequest object
+    if ( window.XMLHttpRequest && window.ActiveXObject )
+        $.ajaxSettings.xhr = function() { try { return new window.ActiveXObject('Microsoft.XMLHTTP'); } catch(e) {} };
+
+    // (static) jQuery.ez() uses jQuery.post() (Or jQuery.get() if post paramer is false)
+    //
+    // @param string callArgs
+    // @param object|array|string|false post Optional post values, uses get request if false or undefined
+    // @param function Optional callBack
+    function _ez( callArgs, post, callBack )
+    {
+        callArgs = callArgs.join !== undefined ? callArgs.join( _seperator ) : callArgs;
+        var url = _serverUrl + 'call/';
+        if ( post )
+        {
+            var _token = '', _tokenNode = document.getElementById('ezxform_token_js');
+            if ( _tokenNode ) _token = _tokenNode.getAttribute('title');
+            if ( post.join !== undefined )// support serializeArray() format
+            {
+                post.push( { 'name': 'ezjscServer_function_arguments', 'value': callArgs } );
+                post.push( { 'name': 'ezxform_token', 'value': _token } );
+            }
+            else if ( typeof(post) === 'string' )// string
+            {
+                post += ( post ? '&' : '' ) + 'ezjscServer_function_arguments=' + callArgs + '&ezxform_token=' + _token;
+            }
+            else // object
+            {
+                post['ezjscServer_function_arguments'] = callArgs;
+                post['ezxform_token'] = _token;
+            }
+            return $.post( url, post, callBack, 'json' );
+        }
+        return $.get( url + encodeURIComponent( callArgs ), {}, callBack, 'json' );
+    };
+    _ez.url = _serverUrl;
+    _ez.root_url = _rootUrl;
+    _ez.seperator = _seperator;
+    $.ez = _ez;
+
+    $.ez.setPreference = function( name, value )
+    {
+        var param = {'Function': 'set_and_exit', 'Key': name, 'Value': value};
+            _tokenNode = document.getElementById( 'ezxform_token_js' );
+        if ( _tokenNode )
+            param.ezxform_token = _tokenNode.getAttribute( 'title' );
+
+        return $.post( _prefUrl, param );
+    };
+
+    // Method version, for loading response into elements
+    // NB: Does not use json (not possible with .load), so ezjscore/call will return string
+    function _ezLoad( callArgs, post, selector, callBack )
+    {
+        callArgs = callArgs.join !== undefined ? callArgs.join( _seperator ) : callArgs;
+        var url = _serverUrl + 'call/';
+        if ( post )
+        {
+            post['ezjscServer_function_arguments'] = callArgs;
+            post['ezxform_token'] = jQuery('#ezxformtoken').attr('title');
+        }
+        else
+            url += encodeURIComponent( callArgs );
+
+        return this.load( url + ( selector ? ' ' + selector : '' ), post, callBack );
+    };
+    $.fn.ez = _ezLoad;
+})(jQuery);
+        
+</script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/superfish-1.5.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jwplayer-5.10/jwplayer.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/chosen.jquery-0.9.12.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/perfect-scrollbar-0.4.5.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jquery.dataTables.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jquery.dataTables.pagination.bstrap.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ezswidl-pskn/design/ezswidl-pskn/javascript/an-front-loader.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ezswidl-users/design/standard/javascript/ezswidl-users.userregister.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ezswidl-users/design/standard/javascript/ezswidl-users.ezhumancaptcha.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ansearch/design/an/javascript/recherche.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/bootstrap-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jquery.easing.1.3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jquery.mousewheel.3.1.6.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jquery.jscrollpane.2.0.0beta11.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jquery.bxSlider.4.1.2.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/jquery-ui-1.8.21.custom.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ezswidl-pskn/design/ezswidl-pskn/javascript/libs/jquery.ui.datepicker-fr.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ezswidl-pskn/design/ezswidl-pskn/javascript/an-front-main.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ezswidl-anobjects/design/ezflow/javascript/ezswidl-anobjects.deputes.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/ezswidl-anobjects/design/an/javascript/ezswidl-anobjects.dossiers.js" charset="utf-8"></script>
+<script type="text/javascript" src="/extension/common/design/an/javascript/common.js" charset="utf-8"></script>
+
+                        
+        <script>
+            var _gaq = [['_setAccount', 'UA-40085081-1'], ['_trackPageview']]; 
+            (function(d, t) {
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.async = true; g.src = '//www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s);
+            })(document, 'script');
+        </script>
+        
+        
+		<div id="fb-root"></div>
+<div id="dialog-form-social-mail"></div>    </body>
+</html>
