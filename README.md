@@ -8,3 +8,5 @@ Fait par la Startup Citoyenne, pour le projet IlsTravaillentPourVous.fr.
 ## Usage
 
     scrapy crawl votespider -o votes.json
+    scrapy crawl dossierspider -o dossiers.json
+    scrapy crawl scrutinspider -o scrutins.json
