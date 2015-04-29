@@ -33,8 +33,7 @@ class DossierSpider(BaseSpider):
             yield result
 
     def parse_dossier(self, response):
-        title = response.xpath('//title/text()').extract()[0]
-        titre = re.sub('[^-]*-', '', title).strip()
+        titre = response.xpath('//title/text()').extract()[0]
 
         item = DossierItem()
         item['uri'] = self.get_absolute_path(response.url)
