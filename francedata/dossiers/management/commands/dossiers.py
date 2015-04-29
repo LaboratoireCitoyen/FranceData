@@ -1,4 +1,6 @@
+# -*- coding: utf8 -*-
 import json
+import slugify
 
 from django.core.management.base import BaseCommand
 
@@ -17,4 +19,5 @@ class Command(BaseCommand):
 
                     dossier.titre = item['titre']
                     dossier.url = item['url']
+                    dossier.slug = slugify.slugify(dossier.titre)
                     dossier.save()
