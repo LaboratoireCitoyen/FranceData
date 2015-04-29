@@ -30,6 +30,10 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         self.insert = options['insert']
 
+        if not self.insert and Vote.objects.count() == 0:
+            print '--insert not specified and no vote in db, forcing --insert'
+            self.insert = True
+
         self.deputes = {}
         for depute in Depute.objects.values_list('nom', 'prenom', 'pk'):
             self.deputes[depute[0]+depute[1]] = depute[2]
