@@ -6,9 +6,9 @@ import ijson.backends.yajl2 as ijson
 
 from django.core.management.base import BaseCommand, CommandError
 
-from scrutins.models import Scrutin
-from deputes.models import Depute
-from groupes.models import Groupe
+from francedata.scrutins.models import Scrutin
+from francedata.deputes.models import Depute
+from francedata.groupes.models import Groupe
 from ...models import Vote
 
 

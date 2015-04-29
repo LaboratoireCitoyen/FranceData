@@ -3,7 +3,7 @@ import re
 
 from django.core.management.base import BaseCommand, CommandError
 
-from dossiers.models import Dossier
+from francedata.dossiers.models import Dossier
 from ...models import Scrutin
 
 NON_DECIMAL = re.compile(r'[^\d.]+')
