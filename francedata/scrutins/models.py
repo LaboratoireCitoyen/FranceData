@@ -10,5 +10,4 @@ class Scrutin(models.Model):
     dossier = models.ForeignKey('dossiers.Dossier', null=True, blank=True)
 
     def __unicode__(self):
-        return self.numero
-
+        return unicode(self.numero)
