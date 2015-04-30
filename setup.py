@@ -22,6 +22,7 @@ setup(
     install_requires=[
         'django-autoslug',
         'django-pure-pagination',
+        'awesome-slugify',
         'wikipedia',
     ],
     extras_require={
