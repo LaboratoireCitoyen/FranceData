@@ -19,6 +19,9 @@ setup(
     long_description=read('README.rst'),
     license='MIT',
     keywords='django france',
+    require=[
+        'wikipedia',
+    ],
     extras_require={
         'Scrap online data': 'scrapy',
         'Django app': 'django',

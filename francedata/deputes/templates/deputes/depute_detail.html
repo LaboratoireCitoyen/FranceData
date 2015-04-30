@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="row">
+    <h1>{{ depute }} ({{ depute.numero_departement }})</h1>
+
+    <h2>Sources</h2>
+
+    <ul>
+        {% if depute.url_an %}
+        <li>
+            <a href="{{ depute.url_an }}" title="{{ depute }} à l'Assemblée Nationale">{{ depute }} à l'Assemblée Nationale</a>
+        </li>
+        {% endif %}
+        {% if depute.url_nosdeputes %}
+        <li>
+            <a href="{{ depute.url_nosdeputes }}" title="{{ depute }} sur nodeputes.fr">Monitoring de l'abstentéisme de {{ depute }} sur nodeputes.fr</a>
+        </li>
+        {% endif %}
+        {% if depute.url_wikipedia %}
+        <li>
+            <a href="{{ depute.url_wikipedia }}" title="{{ depute }} sur wikipedia">{{ depute }} sur wikipedia</a>
+        </li>
+        {% endif %}
+    </ul>
+
+    <h2>Derniers votes par dossier distincts</h2>
+
+    <p>Cette liste présente de dernier vote de {{ depute }} sur chaque dossier
+    distinct, ce qui permet de se donner une idée de ses positions par rapport
+    aux différents dossiers. Vous pouvez également consulter la
+    <a href="{% url 'depute_depute_vote_list' object.slug %}" title="Votes du député {{ object }}">liste de tous les votes du député {{ object }}</a>
+    </p>
+
+    <table>
+    {% for vote in votes %}
+        <tr>
+            <td>{{ vote.date }}</td>
+            <td>
+                <a href="{{ vote.scrutin.dossier.url }}">{{ vote.scrutin.dossier }}</a>
+            </td>
+            <td>
+                <a href="{{ vote.scrutin.url }}">{{ vote.scrutin.objet }}</a>
+            </td>
+            <td>{{ vote.get_division_display }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+    <a href="{% url 'depute_depute_vote_list' object.slug %}" title="Votes du député {{ object }}">Voir tous les votes du député {{ object }}</a>
+
+    {% for dossier in dossiers %}
+    {{ dossier }}
+    {% endfor %}
+</div>
+{% endblock %}

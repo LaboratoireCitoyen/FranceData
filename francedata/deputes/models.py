@@ -8,6 +8,9 @@ class Depute(models.Model):
     nom = models.CharField(max_length=255)
     prenom = models.CharField(max_length=255)
     numero_departement = models.CharField(max_length=3, db_index=True)
+    url_an = models.URLField(blank=True, null=True)
+    url_nosdeputes = models.URLField(blank=True, null=True)
+    url_wikipedia = models.URLField(blank=True, null=True)
     slug = autoslug.AutoSlugField(unique=True,
         populate_from=lambda instance: unicode(instance))
 

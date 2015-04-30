@@ -5,6 +5,11 @@ from . import views
 
 urlpatterns = patterns('',
     url(
+        r'(?P<slug>[\w-]+)/votes/$',
+        views.DeputeVoteListView.as_view(),
+        name='depute_depute_vote_list',
+    ),
+    url(
         r'(?P<slug>[\w-]+)/$',
         views.DeputeDetailView.as_view(),
         name='depute_depute_detail',
