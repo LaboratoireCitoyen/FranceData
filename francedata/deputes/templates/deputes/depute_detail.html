@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block head_title %}{{ object }}: historique des votes du député{% endblock %}
+
 {% block body %}
 <div class="row">
     <h1>{{ depute }} ({{ depute.numero_departement }})</h1>

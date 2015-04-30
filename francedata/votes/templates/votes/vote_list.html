@@ -1,7 +1,10 @@
 {% extends 'francedata/base.html' %}
 
+{% block head_title %}{% if depute %}{{ depute }}: {% endif %}Liste des votes à l'Assemblée Nationale{% endblock %}
+
 {% block body %}
 <div class="row">
+    <h1>{% if depute %}{{ depute }}: {% endif %}Liste des votes à l'Assemblée Nationale</h1>
 
     <table>
     {% for vote in object_list %}
