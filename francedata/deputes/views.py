@@ -31,3 +31,8 @@ class DeputeVoteListView(PaginationMixin, generic.ListView):
     def get_queryset(self):
         self.depute = shortcuts.get_object_or_404(Depute, slug=self.kwargs['slug'])
         return self.depute.vote_set.select_related('scrutin', 'scrutin__dossier')
+
+
+class DeputeListView(PaginationMixin, generic.ListView):
+    paginate_by = 20
+    queryset = Depute.objects.all().order_by('nom')
