@@ -38,6 +38,6 @@ class DossierSpider(BaseSpider):
         item = DossierItem()
         item['uri'] = self.get_absolute_path(response.url)
         item['url'] = self.make_url(response, response.url)
-        item['titre'] = titre
+        item['titre'] = titre.replace(u'Assemblée nationale - ', '').capitalize()
 
         yield item
