@@ -23,7 +23,8 @@ class ScrutinSpider(BaseSpider):
         for scrutin in response.xpath('//table[@class="scrutins"]/tbody/tr'):
             item = ScrutinItem()
             item['numero'] = self.get_text(scrutin, 'td[1]')
-            item['objet'] = self.get_text(scrutin, 'td[3]').strip(' [')
+            item['objet'] = self.get_text(scrutin, 'td[3]').strip(' ['
+                    ).capitalize()
             item['uri'] = self.get_absolute_path(scrutin.select(
                 'td/a[contains(text(), "analyse")]/@href')[0].extract())
             item['url'] = self.make_url(response, item['uri'])
