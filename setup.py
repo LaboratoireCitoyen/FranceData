@@ -19,7 +19,9 @@ setup(
     long_description=read('README.rst'),
     license='MIT',
     keywords='django france',
-    require=[
+    install_requires=[
+        'django-autoslug',
+        'django-pure-pagination',
         'wikipedia',
     ],
     extras_require={
