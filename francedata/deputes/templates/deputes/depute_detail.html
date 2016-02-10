@@ -11,12 +11,12 @@
     <ul>
         {% if depute.url_an %}
         <li>
-            <a href="{{ depute.url_an }}" title="{{ depute }} à l'Assemblée Nationale">{{ depute }} à l'Assemblée Nationale</a>
+            <a href="{{ depute.url_an }}" title="{{ depute }} à l'Assemblée nationale">{{ depute }} à l'Assemblée nationale</a>
         </li>
         {% endif %}
         {% if depute.url_nosdeputes %}
         <li>
-            <a href="{{ depute.url_nosdeputes }}" title="{{ depute }} sur nodeputes.fr">Monitoring de l'abstentéisme de {{ depute }} sur nodeputes.fr</a>
+            <a href="{{ depute.url_nosdeputes }}" title="{{ depute }} sur nodeputes.fr">Monitoring de l'activité de {{ depute }} sur nodeputes.fr</a>
         </li>
         {% endif %}
         {% if depute.url_wikipedia %}
