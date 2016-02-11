@@ -42,7 +42,7 @@ class DeputeSpider(CrawlSpider):
 
         depute['photo_url'] = self.photo_url % depute['slug']
 
-        req = None
+        reqs = []
 
         for ad in depute['adresses']:
             adresse = ad['adresse']
@@ -55,15 +55,18 @@ class DeputeSpider(CrawlSpider):
                     ad['fax'] = telm.group(2)
 
             lad = adresse.lower()
-            if not req and not lad.startswith(u'assemblée nationale'):
+            if not lad.startswith(u'assemblée nationale'):
                 trimmed = re.sub(pattern, '', adresse)
                 req = Request(url=self.get_geocode_url(trimmed),
                               callback=self.parse_geocode)
 
                 req.meta['depute'] = depute
                 req.meta['adresse'] = ad
+                reqs.append(req)
 
-        if req is not None:
+        if len(reqs) > 0:
+            req = reqs.pop()
+            req.meta['requests'] = reqs
             yield req
         else:
             yield depute
@@ -74,9 +77,15 @@ class DeputeSpider(CrawlSpider):
     def parse_geocode(self, response):
         depute = response.meta['depute']
         adresse = response.meta['adresse']
+        reqs = response.meta['requests']
 
         geo = json.loads(response.body_as_unicode())
         if 'features' in geo and len(geo['features']) > 0:
             adresse['geo'] = geo['features'][0]
 
-        yield depute
+        if len(reqs) > 0:
+            req = reqs.pop()
+            req.meta['requests'] = reqs
+            yield req
+        else:
+            yield depute
