@@ -57,7 +57,7 @@ class DeputeSpider(CrawlSpider):
             lad = adresse.lower()
             if not req and not lad.startswith(u'assemblée nationale'):
                 trimmed = re.sub(pattern, '', adresse)
-                req = Request(url=self.get_geocode_url(adresse),
+                req = Request(url=self.get_geocode_url(trimmed),
                               callback=self.parse_geocode)
 
                 req.meta['depute'] = depute
