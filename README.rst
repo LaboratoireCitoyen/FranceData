@@ -9,6 +9,7 @@ Downloaded les données
 Installez scrappy et lancez ces commandes dans le dossier FranceData:
 
     curl -o deputes.json http://www.nosdeputes.fr/deputes/json
+    scrapy crawl parlspider -o parlementaires.json
     scrapy crawl votespider -o votes.json
     scrapy crawl dossierspider -o dossiers.json
     scrapy crawl scrutinspider -o scrutins.json
