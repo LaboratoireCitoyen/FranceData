@@ -13,6 +13,6 @@ class Vote(models.Model):
     )
 
     scrutin = models.ForeignKey('scrutins.Scrutin')
-    depute = models.ForeignKey('deputes.Depute')
+    parlementaire = models.ForeignKey('parlementaires.Parlementaire')
     groupe = models.ForeignKey('groupes.Groupe')
     division = models.SmallIntegerField(choices=DIVISION_CHOICES)

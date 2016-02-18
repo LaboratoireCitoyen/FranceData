@@ -7,7 +7,7 @@ import ijson.backends.yajl2 as ijson
 from django.core.management.base import BaseCommand, CommandError
 
 from francedata.scrutins.models import Scrutin
-from francedata.deputes.models import Depute
+from francedata.parlementaires.models import Parlementaire
 from francedata.groupes.models import Groupe
 from ...models import Vote
 
@@ -34,9 +34,9 @@ class Command(BaseCommand):
             print '--insert not specified and no vote in db, forcing --insert'
             self.insert = True
 
-        self.deputes = {}
-        for depute in Depute.objects.values_list('nom', 'prenom', 'pk'):
-            self.deputes[depute[0]+depute[1]] = depute[2]
+        self.parlementaires = {}
+        for parlementaire in Parlementaire.objects.values_list('nom', 'prenom', 'pk'):
+            self.parlementaires[parlementaire[0]+parlementaire[1]] = parlementaire[2]
 
         self.scrutins = {}
         for scrutin in Scrutin.objects.values_list('uri', 'pk'):
@@ -74,7 +74,7 @@ class Command(BaseCommand):
             Vote.objects.bulk_create(votes)
 
     def get_vote(self, item):
-        kwargs = dict(depute_id=self.get_depute_id(item),
+        kwargs = dict(parlementaire_id=self.get_parlementaire_id(item),
                       scrutin_id=self.get_scrutin_id(item['scrutin_uri']))
 
         if self.insert:
@@ -96,8 +96,8 @@ class Command(BaseCommand):
 
         return vote
 
-    def get_depute_id(self, item):
-        return self.deputes[item['nom'] + item['prenom']]
+    def get_parlementaire_id(self, item):
+        return self.parlementaires[item['nom'] + item['prenom']]
 
     def get_scrutin_id(self, url):
         return self.scrutins[url]

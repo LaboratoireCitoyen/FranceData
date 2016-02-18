@@ -19,11 +19,11 @@ Installer les données
 
 Dans votre projet Django, ajoutez aux ``INSTALLED_APPS``::
 
-    'francedata.deputes', 
-    'francedata.dossiers', 
-    'francedata.groupes', 
-    'francedata.scrutins', 
-    'francedata.votes', 
+    'francedata.parlementaires',
+    'francedata.dossiers',
+    'francedata.groupes',
+    'francedata.scrutins',
+    'francedata.votes',
 
 Puis lancez la synchronisation::
 

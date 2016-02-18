@@ -12,6 +12,7 @@ class ScrutinItem(scrapy.Item):
     numero = scrapy.Field()
     objet = scrapy.Field()
     date = scrapy.Field()
+    chambre = scrapy.Field()
     url = scrapy.Field()
     uri = scrapy.Field()
     dossier_url = scrapy.Field()

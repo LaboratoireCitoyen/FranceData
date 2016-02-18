@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block head_title %}{{ object }}: historique des votes du parlementaire{% endblock %}
+
+{% block body %}
+<div class="row">
+    <h1>{{ parlementaire }} ({{ parlementaire.numero_departement }})</h1>
+
+    <h2>Sources</h2>
+
+    <ul>
+        {% if parlementaire.url_officielle %}
+        <li>
+            {% if parlementaire.chambre == 'AN' %}
+            <a href="{{ parlementaire.url_officielle }}" title="{{ parlementaire }} à l'Assemblée nationale">{{ parlementaire }} à l'Assemblée nationale</a>
+            {% else %}
+            <a href="{{ parlementaire.url_officielle }}" title="{{ parlementaire }} au Sénat">{{ parlementaire }} au Sénat</a>
+            {% endif %}
+        </li>
+        {% endif %}
+        {% if parlementaire.url_rc %}
+        <li>
+            {% if parlementaire.chambre == 'AN' %}
+            <a href="{{ parlementaire.url_rc }}" title="{{ parlementaire }} sur nosdéputés.fr">Monitoring de l'activité de {{ parlementaire }} sur nosdéputés.fr</a>
+            {% else %}
+            <a href="{{ parlementaire.url_rc }}" title="{{ parlementaire }} sur nossénateurs.fr">Monitoring de l'activité de {{ parlementaire }} sur nossénateurs.fr</a>
+            {% endif %}
+        </li>
+        {% endif %}
+        {% if parlementaire.url_wikipedia %}
+        <li>
+            <a href="{{ parlementaire.url_wikipedia }}" title="{{ parlementaire }} sur wikipedia">{{ parlementaire }} sur wikipedia</a>
+        </li>
+        {% endif %}
+    </ul>
+
+    <h2>Derniers votes par dossier distincts</h2>
+
+    <p>Cette liste présente de dernier vote de {{ parlementaire }} sur chaque dossier
+    distinct, ce qui permet de se donner une idée de ses positions par rapport
+    aux différents dossiers. Vous pouvez également consulter la
+    <a href="{% url 'parlementaire_parlementaire_vote_list' object.slug %}" title="Votes du parlementaire {{ object }}">liste de tous les votes du parlementaire {{ object }}</a>
+    </p>
+
+    <table>
+    {% for vote in votes %}
+        <tr>
+            <td>{{ vote.date }}</td>
+            <td>
+                <a href="{{ vote.scrutin.dossier.url }}">{{ vote.scrutin.dossier }}</a>
+            </td>
+            <td>
+                <a href="{{ vote.scrutin.url }}">{{ vote.scrutin.objet }}</a>
+            </td>
+            <td>{{ vote.get_division_display }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+    <a href="{% url 'parlementaire_parlementaire_vote_list' object.slug %}" title="Votes du parlementaire {{ object }}">Voir tous les votes du parlementaire {{ object }}</a>
+
+    {% for dossier in dossiers %}
+    {{ dossier }}
+    {% endfor %}
+</div>
+{% endblock %}

@@ -3,7 +3,7 @@ import ijson.backends.yajl2 as ijson
 
 from django.core.management.base import BaseCommand
 
-from ...models import Depute
+from ...models import Parlementaire
 
 
 class Command(BaseCommand):
@@ -16,12 +16,13 @@ class Command(BaseCommand):
                     for item in items:
                         item = item['depute']
 
-                        depute, created = Depute.objects.get_or_create(
+                        depute, created = Parlementaire.objects.get_or_create(
                             nom=item['nom_de_famille'], prenom=item['prenom'])
 
+                        depute.chambre = 'AN'
                         depute.numero_departement = item['num_deptmt']
-                        depute.url_an = item['url_an']
-                        depute.url_nosdeputes = item['url_nosdeputes']
+                        depute.url_officielle = item['url_an']
+                        depute.url_rc = item['url_nosdeputes']
 
                         if not depute.url_wikipedia:
                             try:
@@ -30,5 +31,6 @@ class Command(BaseCommand):
                                 depute.url_wikipedia = wikipedia.page(item['nom'] + ' politique').url
                             except wikipedia.exceptions.PageError:
                                 depute.url_wikipedia = ''
-                        print depute, depute.url_nosdeputes, depute.url_an, depute.url_wikipedia
+                        print depute, depute.url_rc, depute.url_officielle, depute.url_wikipedia
+
                         depute.save()

@@ -1,10 +1,12 @@
 {% extends 'francedata/base.html' %}
 
-{% block head_title %}{% if depute %}{{ depute }}: {% endif %}Liste des votes à l'Assemblée Nationale{% endblock %}
+{% block head_title %}{% if parlementaire %}{{ parlementaire }}: {% endif %}Liste des votes
+    {% if parlementaire.chambre == 'AN' %}à l'Assemblée Nationale{% else %}au Sénat{% endif %}{% endblock %}
 
 {% block body %}
 <div class="row">
-    <h1>{% if depute %}{{ depute }}: {% endif %}Liste des votes à l'Assemblée Nationale</h1>
+    <h1>{% if parlementaire %}{{ parlementaire }}: {% endif %}Liste des votes
+        {% if parlementaire.chambre == 'AN' %}à l'Assemblée Nationale{% else %}au Sénat{% endif %}</h1>
 
     <table>
     {% for vote in object_list %}

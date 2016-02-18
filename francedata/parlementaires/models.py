@@ -4,18 +4,20 @@ from django.db import models
 import autoslug
 
 
-class Depute(models.Model):
+class Parlementaire(models.Model):
     nom = models.CharField(max_length=255)
     prenom = models.CharField(max_length=255)
+    chambre = models.CharField(max_length=255)
     numero_departement = models.CharField(max_length=3, db_index=True)
-    url_an = models.URLField(blank=True, null=True)
-    url_nosdeputes = models.URLField(blank=True, null=True)
+    url_officielle = models.URLField(blank=True, null=True)
+    url_rc = models.URLField(blank=True, null=True)
     url_wikipedia = models.URLField(blank=True, null=True)
     slug = autoslug.AutoSlugField(unique=True,
         populate_from=lambda instance: unicode(instance))
 
     def __unicode__(self):
-        return '%s %s' % (self.prenom, self.nom)
+        mandat = 'Député' if self.chambre == 'AN' else 'Sénateur'
+        return '%s %s %s' % (mandat, self.prenom, self.nom)
 
     def get_absolute_url(self):
-        return reverse('depute_depute_detail', args=(self.slug,))
+        return reverse('parlementaire_parlementaire_detail', args=(self.slug,))
