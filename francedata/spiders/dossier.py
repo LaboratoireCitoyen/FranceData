@@ -16,28 +16,52 @@ class DossierSpider(BaseSpider):
 
     rules = [
         Rule(LinkExtractor(allow=['/scrutins/liste/.*']),
-             'parse_page', follow=True),
+             'parse_an_scrutins', follow=True),
         Rule(LinkExtractor(allow=['/\d+/dossiers/.*']),
-             'parse_dossier'),
+             'parse_an_dossier'),
+        Rule(LinkExtractor(allow=['/scrutin-public/scr\d+.html']),
+             'parse_senat_session', follow=True),
+        Rule(LinkExtractor(allow=['/dossier-legislatif/.*']),
+             'parse_senat_dossier', follow=True)
     ]
 
-    def parse_page(self, response):
-        dossiers = response.xpath(
+    start_urls = [
+        'http://www2.assemblee-nationale.fr/scrutins/liste/',
+        'http://www.senat.fr/seancepub.html'
+    ]
+
+    def parse_an_scrutins(self, response):
+        an_dossiers = response.xpath(
             '//a[contains(@href, "/dossiers/")]/@href').extract()
 
-        for dossier in set(dossiers):
+        for dossier in set(an_dossiers):
             yield Request(url=self.make_url(response, dossier),
-                          callback=self.parse_dossier)
+                          callback=self.parse_an_dossier)
 
-        for result in super(DossierSpider, self).parse_page(response):
-            yield result
-
-    def parse_dossier(self, response):
+    def parse_an_dossier(self, response):
         titre = response.xpath('//title/text()').extract()[0]
 
         item = DossierItem()
-        item['uri'] = self.get_absolute_path(response.url)
+        item['chambre'] = 'AN'
         item['url'] = self.make_url(response, response.url)
         item['titre'] = titre.replace(u'Assemblée nationale - ', '').capitalize()
+
+        yield item
+
+    def parse_senat_session(self, response):
+        sen_dossiers = response.xpath(
+            '//a[contains(@href, "/dossier-legislatif/")]/href').extract()
+
+        for dossier in set(sen_dossiers):
+            yield Request(url=self.make_url(response, dossier),
+                          callback=self.parse_senat_dossier)
+
+    def parse_senat_dossier(self, response):
+        titre = response.xpath('//title/text()').extract()[0]
+
+        item = DossierItem()
+        item['chambre'] = 'SEN'
+        item['url'] = self.make_url(response, response.url)
+        item['titre'] = titre.replace(u' - Sénat', '').capitalize()
 
         yield item
