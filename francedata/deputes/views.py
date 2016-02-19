@@ -11,18 +11,19 @@ from .models import Depute
 class DeputeDetailView(generic.DetailView):
     queryset = Depute.objects.all()
 
-    def get_context_data(self, object):
+    def get_context_data(self, **kwargs):
         c = super(DeputeDetailView, self).get_context_data()
 
-        dossiers = Dossier.objects.filter(scrutin__vote__in=self.object.vote_set.all()
-                ).distinct()
-
         recent = datetime.datetime.now() - datetime.timedelta(days=400)
-        c['votes'] = self.object.vote_set.filter(scrutin__date__gte=recent
-                ).select_related('scrutin').distinct('scrutin__dossier__titre'
-                ).order_by('scrutin__dossier__titre')
+        c['votes'] = self.get_vote_queryset(recent)
 
         return c
+
+    def get_vote_queryset(self, recent):
+        qs = self.object.vote_set.filter(scrutin__date__gte=recent
+                ).select_related('scrutin').distinct('scrutin__dossier__titre'
+                ).order_by('scrutin__dossier__titre')
+        return qs
 
 
 class DeputeVoteListView(PaginationMixin, generic.ListView):
@@ -32,7 +33,14 @@ class DeputeVoteListView(PaginationMixin, generic.ListView):
         self.depute = shortcuts.get_object_or_404(Depute, slug=self.kwargs['slug'])
         return self.depute.vote_set.select_related('scrutin', 'scrutin__dossier')
 
+    def get_context_data(self):
+        c = super(DeputeVoteListView, self).get_context_data()
+        c['depute'] = self.depute
+        return c
+
 
 class DeputeListView(PaginationMixin, generic.ListView):
     paginate_by = 20
-    queryset = Depute.objects.all().order_by('nom')
+
+    def get_queryset(self):
+        return Depute.objects.all().order_by('nom')

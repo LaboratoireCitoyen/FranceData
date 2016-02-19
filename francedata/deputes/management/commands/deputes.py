@@ -3,11 +3,14 @@ import ijson.backends.yajl2 as ijson
 
 from django.core.management.base import BaseCommand
 
-from ...models import Depute
+from ...models import Depute, Circonscription
 
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
+        self.circonscriptions = {o.pk: o for o in
+                Circonscription.objects.all()}
+
         wikipedia.set_lang('fr')
 
         for source in args:

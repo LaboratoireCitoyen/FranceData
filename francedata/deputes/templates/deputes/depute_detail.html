@@ -34,20 +34,7 @@
     <a href="{% url 'depute_depute_vote_list' object.slug %}" title="Votes du député {{ object }}">liste de tous les votes du député {{ object }}</a>
     </p>
 
-    <table>
-    {% for vote in votes %}
-        <tr>
-            <td>{{ vote.date }}</td>
-            <td>
-                <a href="{{ vote.scrutin.dossier.url }}">{{ vote.scrutin.dossier }}</a>
-            </td>
-            <td>
-                <a href="{{ vote.scrutin.url }}">{{ vote.scrutin.objet }}</a>
-            </td>
-            <td>{{ vote.get_division_display }}</td>
-        </tr>
-    {% endfor %}
-    </table>
+    {% include 'votes/_vote_list.html' %}
 
     <a href="{% url 'depute_depute_vote_list' object.slug %}" title="Votes du député {{ object }}">Voir tous les votes du député {{ object }}</a>
 

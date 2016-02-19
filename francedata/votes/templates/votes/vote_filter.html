@@ -1,0 +1,29 @@
+{% extends 'francedata/base.html' %}
+
+{% block body %}
+<div class="row">
+    <form method="get" action="">
+        {{ filter.form }}
+        <input type="submit" />
+    </form>
+</div>
+
+<div class="row">
+
+    <table>
+    {% for vote in object_list %}
+        <tr>
+            <td>{{ vote.date }}</td>
+            <td>
+                <a href="{{ vote.scrutin.dossier.url }}">{{ vote.scrutin.dossier }}</a>
+            </td>
+            <td>
+                <a href="{{ vote.scrutin.url }}">{{ vote.scrutin.objet }}</a>
+            </td>
+            <td>{{ vote.get_division_display }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+</div>
+{% endblock %}
