@@ -57,6 +57,9 @@ class VoteSpider(BaseSpider):
                     '//div[@class="%s"]/ul[@class="deputes"]/li' % division)
 
                 for votant in votants:
+                    if len(votant.xpath('b/text()').extract()) == 0:
+                        continue
+
                     item = VoteItem()
                     item['chambre'] = 'AN'
                     item['scrutin_url'] = self.make_url(response, response.url)
@@ -74,16 +77,14 @@ class VoteSpider(BaseSpider):
                           callback=self.parse_senat_scrutin)
 
     def parse_senat_scrutin(self, response):
-        for td in response.xpath('//a[contains(@href,"/senateur/")]/..'):
-            posheader = td.xpath('../../preceding-sibling::*[1]')[0]
-            position = posheader.xpath('b/text()')[0].extract()
+        for label, division in self.DIV_SEN.items():
+            votants = response.xpath('//p/b/text()[contains(., "%s")]/../../following-sibling::table[1]//a[contains(@href,"/senateur/")]/@href' % label)
 
-            if position in self.DIV_SEN:
+            for votant in votants:
                 item = VoteItem()
                 item['chambre'] = 'SEN'
                 item['scrutin_url'] = self.make_url(response, response.url)
-                item['division'] = self.DIV_SEN[position]
-                item['parl_url'] = self.make_url(response,
-                    td.xpath('a/@href')[0].extract())
+                item['division'] = division
+                item['parl_url'] = self.make_url(response, votant.extract())
 
                 yield item
