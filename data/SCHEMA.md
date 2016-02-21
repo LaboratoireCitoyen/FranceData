@@ -37,8 +37,11 @@ Contient la liste des dossiers législatifs de l'Assemblée nationale et du Sén
 		chambre: abréviation de la chambre parlementaire du dossier
 			"AN" ou "SEN"
 
-		url: URL du dossier sur le site officiel de la chambre (PK)
+		url_an: URL du dossier sur le site officiel de l'Assemblée nationale, peut être absent pour un dossier passé uniquement au Sénat
 			"http://www.assemblee-nationale.fr/14/dossiers/prorogation_application_loi_55-385.asp"
+
+		url_sen: URL du dossier sur le site officiel du Sénat, peut être absent pour un dossier passé uniquement à l'Assemblée nationale
+			"http://www.senat.fr/dossier-legislatif/pjl15-356.html"
 
 		titre: titre du dossier
 			"Pouvoirs publics : application de la loi relative à l'état d'urgence"
@@ -64,7 +67,7 @@ Contient la liste des scrutins publics de l'Assemblée nationale et du Sénat.
 		date: date du scrutin au format "YYYY-MM-DD"
 			"2016-02-16"
 
-		dossier_url: URL du dossier concerné (FK -> data/dossiers.json:url)
+		dossier_url: URL du dossier concerné (FK -> data/dossiers.json:url_an ou url_sen suivant la chambre)
 			"http://www.assemblee-nationale.fr/14/dossiers/prorogation_application_loi_55-385.asp"
 
 ### data/votes.json

@@ -9,7 +9,8 @@ import scrapy
 
 
 class DossierItem(scrapy.Item):
-    url = scrapy.Field()
+    url_an = scrapy.Field()
+    url_sen = scrapy.Field()
     chambre = scrapy.Field()
     titre = scrapy.Field()
 
