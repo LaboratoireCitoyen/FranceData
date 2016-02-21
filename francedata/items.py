@@ -28,6 +28,5 @@ class VoteItem(scrapy.Item):
     chambre = scrapy.Field()
     nom = scrapy.Field()
     prenom = scrapy.Field()
-    groupe = scrapy.Field()
     division = scrapy.Field()
     parl_url = scrapy.Field()
