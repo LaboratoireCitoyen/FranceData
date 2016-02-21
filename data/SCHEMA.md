@@ -2,6 +2,32 @@
 
 ## Fichiers JSON
 
+### data/parlementaires.json
+
+Contient la liste de tous les députés et sénateurs.  Les données sont au format
+renvoyé par [les API nosdéputés.fr et nossénateurs.fr][rcapi] avec en complément
+les champs suivants:
+
+	<listitem>
+
+		chambre: abréviation de la chambre du parlementaire
+			"AN" ou "SEN"
+
+		photo_url: URL vers la photo du parlementaire
+			"http://www.nosdeputes.fr/depute/photo/gilda-hobert"
+
+		adresses
+
+			<listitem>
+
+				geo: géocodage de l'adresse
+					contient le 1er "feature" de l'objet GeoCodeJSON renvoyé par api-adresse.data.gouv.fr
+
+Voir [la spécification GeoCodeJSON][geocodejson].
+
+[geocodejson]: https://github.com/geocoders/geocodejson-spec
+[rcapi]: http://cpc.regardscitoyens.org/trac/wiki/API#Informationdund%C3%A9put%C3%A9particulier
+
 ### data/dossiers.json
 
 Contient la liste des dossiers législatifs de l'Assemblée nationale et du Sénat.
