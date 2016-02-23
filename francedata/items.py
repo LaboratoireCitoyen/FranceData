@@ -8,26 +8,26 @@
 import scrapy
 
 
-class ScrutinItem(scrapy.Item):
-    numero = scrapy.Field()
-    objet = scrapy.Field()
-    date = scrapy.Field()
-    url = scrapy.Field()
-    uri = scrapy.Field()
-    dossier_url = scrapy.Field()
-    dossier_uri = scrapy.Field()
-
-
 class DossierItem(scrapy.Item):
-    url = scrapy.Field()
-    uri = scrapy.Field()
+    url_an = scrapy.Field()
+    url_sen = scrapy.Field()
+    chambre = scrapy.Field()
     titre = scrapy.Field()
 
 
-class VoteItem(scrapy.Item):
-    scrutin_uri = scrapy.Field()
+class ScrutinItem(scrapy.Item):
+    url = scrapy.Field()
+    chambre = scrapy.Field()
+    numero = scrapy.Field()
+    objet = scrapy.Field()
+    date = scrapy.Field()
+    dossier_url = scrapy.Field()
 
-    prenom = scrapy.Field()
+
+class VoteItem(scrapy.Item):
+    scrutin_url = scrapy.Field()
+    chambre = scrapy.Field()
     nom = scrapy.Field()
-    groupe = scrapy.Field()
+    prenom = scrapy.Field()
     division = scrapy.Field()
+    parl_url = scrapy.Field()
