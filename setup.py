@@ -18,21 +18,15 @@ setup(
     zip_safe=False,
     long_description=read('README.rst'),
     license='MIT',
-    keywords='django france',
+    keywords='france',
     install_requires=[
-        'django-autoslug',
-        'django-pure-pagination',
-        'awesome-slugify',
-        'wikipedia',
     ],
     extras_require={
         'Scrap online data': 'scrapy',
-        'Django app': 'django',
     },
     classifiers=[
         'Development Status :: 1 - Alpha/Planning',
         'Environment :: Web Environment',
-        'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
