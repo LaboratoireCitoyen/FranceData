@@ -13,3 +13,17 @@ Installez scrappy et lancez ces commandes dans le dossier FranceData:
     scrapy crawl dossierspider -o data/dossiers.json
     scrapy crawl scrutinspider -o data/scrutins.json
 
+Installer les données
+---------------------
+
+FranceData inclu un serveur d'API simple basé sur django-representatives et
+django-representatives-votes.
+
+Dans ``apiserver/``, synchronisez la base de données (fichier SQLite3 local par
+défaut)::
+
+    ./manage.py migrate
+
+Puis, lancez le serveur::
+
+    ./manage.py
