@@ -13,12 +13,5 @@ BOT_NAME = 'francedata'
 SPIDER_MODULES = ['francedata.spiders']
 NEWSPIDER_MODULE = 'francedata.spiders'
 
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'francedata (+http://www.yourdomain.com)'
-
-# For debugging purpose
-#CLOSESPIDER_ITEMCOUNT = 3
-#
-#EXTENSIONS = {
-#    'scrapy.contrib.closespider.CloseSpider': 4,
-#}
+# Crawl responsibly by identifying yourself on the user-agent
+# USER_AGENT = 'francedata (+http://www.yourdomain.com)'

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import re
-import urlparse
 
 from scrapy import Request
 from scrapy.contrib.spiders import Rule
@@ -46,8 +45,8 @@ class ScrutinSpider(BaseSpider):
             item = ScrutinItem()
             item['chambre'] = 'AN'
             item['numero'] = self.get_text(scrutin, 'td[1]')
-            item['objet'] = self.get_text(scrutin, 'td[3]').strip(' ['
-                    ).capitalize()
+            item['objet'] = self.get_text(scrutin, 'td[3]').strip(
+                ' [').capitalize()
             item['url'] = self.make_url(response, scrutin.select(
                 'td/a[contains(text(), "analyse")]/@href')[0].extract())
 

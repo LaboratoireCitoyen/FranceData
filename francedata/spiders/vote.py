@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 import re
-import urlparse
 
 from scrapy import Request
-from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.contrib.spiders import Rule
 from scrapy.contrib.linkextractors import LinkExtractor
 
 from francedata.items import VoteItem
@@ -44,31 +43,27 @@ class VoteSpider(BaseSpider):
                           callback=self.parse_an_liste)
 
     def parse_an_votes(self, response):
-        votes = response.xpath(
-            '//div[@class="TTgroupe"]/div/ul[@class="deputes"]/li')
-
         for sel in response.xpath('//div[@class="TTgroupe"]'):
             nomgroupe = sel.xpath('p[@class="nomgroupe"]/text()')
             nomgroupe = nomgroupe.extract()[0]
             nomgroupe = re.search('([^(]+)', nomgroupe).groups(1)[0].strip()
 
             for division in self.DIVISIONS:
-                votants = sel.xpath(
+                reps = sel.xpath(
                     '//div[@class="%s"]/ul[@class="deputes"]/li' % division)
 
-                for votant in votants:
-                    if len(votant.xpath('b/text()').extract()) == 0:
+                for rep in reps:
+                    if len(rep.xpath('b/text()').extract()) == 0:
                         continue
 
                     item = VoteItem()
                     item['chambre'] = 'AN'
                     item['scrutin_url'] = self.make_url(response, response.url)
                     item['division'] = division
-                    item['prenom'] = votant.xpath('text()').extract()[0].strip()
-                    item['nom'] = votant.xpath('b/text()').extract()[0].strip()
+                    item['prenom'] = rep.xpath('text()').extract()[0].strip()
+                    item['nom'] = rep.xpath('b/text()').extract()[0].strip()
 
                     yield item
-
 
     def parse_senat_session(self, response):
         for link in response.xpath('//span[@class="blocscrnr"]'):
@@ -78,7 +73,10 @@ class VoteSpider(BaseSpider):
 
     def parse_senat_scrutin(self, response):
         for label, division in self.DIV_SEN.items():
-            votants = response.xpath('//p/b/text()[contains(., "%s")]/../../following-sibling::table[1]//a[contains(@href,"/senateur/")]/@href' % label)
+            votants = response.xpath(
+                '//p/b/text()[contains(., "%s")]/../..' +
+                '/following-sibling::table[1]' +
+                '//a[contains(@href,"/senateur/")]/@href' % label)
 
             for votant in votants:
                 item = VoteItem()

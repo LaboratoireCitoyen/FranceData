@@ -2,7 +2,6 @@
 import json
 import re
 from urllib import quote
-import urlparse
 
 from scrapy import Request
 from scrapy.contrib.spiders import CrawlSpider
@@ -67,8 +66,8 @@ class ParlSpider(CrawlSpider):
                     ad['fax'] = telm.group(2)
 
             lad = adresse.lower()
-            if (not lad.startswith(u'assemblée nationale')
-                and not lad.startswith(u'sénat')):
+            if (not lad.startswith(u'assemblée nationale') and
+                    not lad.startswith(u'sénat')):
                 trimmed = re.sub(pattern, '', adresse)
                 req = Request(url=self.get_geocode_url(trimmed),
                               callback=self.parse_geocode)

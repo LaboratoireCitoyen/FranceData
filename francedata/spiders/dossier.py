@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-import re
-import urlparse
-
 from scrapy import Request
 from scrapy.contrib.spiders import Rule
 from scrapy.contrib.linkextractors import LinkExtractor
@@ -44,9 +41,11 @@ class DossierSpider(BaseSpider):
         item = DossierItem()
         item['chambre'] = 'AN'
         item['url_an'] = self.make_url(response, response.url)
-        item['titre'] = titre.replace(u'Assemblée nationale - ', '').capitalize()
+        item['titre'] = titre.replace(u'Assemblée nationale - ',
+                                      '').capitalize()
 
-        url_sen = response.xpath('//a[contains(@href, "senat.fr/dossier-legislatif/")]/@href')
+        url_sen = response.xpath(
+            '//a[contains(@href, "senat.fr/dossier-legislatif/")]/@href')
         if len(url_sen):
             item['url_sen'] = self.make_url(response, url_sen[0].extract())
 
@@ -68,7 +67,9 @@ class DossierSpider(BaseSpider):
         item['url_sen'] = self.make_url(response, response.url)
         item['titre'] = titre.replace(u' - Sénat', '').capitalize()
 
-        url_an = response.xpath('//a[contains(@href, "assemblee-nationale.fr")][contains(@href, "/dossiers/")]/@href')
+        url_an = response.xpath(
+            '//a[contains(@href, "assemblee-nationale.fr")]' +
+            '[contains(@href, "/dossiers/")]/@href')
         if len(url_an):
             item['url_an'] = self.make_url(response, url_an[0].extract())
 
