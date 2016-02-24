@@ -23,10 +23,10 @@ setup(
         'django-representatives-votes>=0.0.15',
         'django>=1.8,<1.9',
         'django-filter',
-        'djangorestframework'
+        'djangorestframework',
+        'scrapy'
     ],
     extras_require={
-        'Scrap online data': 'scrapy'
     },
     classifiers=[
         'Development Status :: 1 - Alpha/Planning',

@@ -1,0 +1,24 @@
+#!/bin/bash
+set -x
+
+export DJANGO_SETTINGS_MODULE=apiserver.settings
+
+echo "Update started at $(date)"
+
+[ -f data/parlementaires.json ] && rm data/parlementaires.json
+scrapy crawl parlspider -o data/parlementaires.json
+cat data/parlementaires.json | francedata_import_representatives
+
+[ -f data/dossiers.json ] && rm data/dossiers.json
+scrapy crawl dossierspider -o data/dossiers.json
+cat data/dossiers.json | francedata_import_dossiers
+
+[ -f data/scrutins.json ] && rm data/scrutins.json
+scrapy crawl scrutinspider -o data/scrutins.json
+cat data/scrutins.json | francedata_import_scrutins
+
+[ -f data/votes.json ] && rm data/votes.json
+scrapy crawl votespider -o data/votes.json
+cat data/votes.json | francedata_import_votes
+
+echo "Update finished at $(date)"
