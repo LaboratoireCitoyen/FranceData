@@ -18,11 +18,15 @@ setup(
     zip_safe=False,
     long_description=read('README.rst'),
     license='MIT',
-    keywords='france',
+    keywords='django france',
     install_requires=[
+        'django-representatives-votes>=0.0.15',
+        'django>=1.8,<1.9',
+        'django-filter',
+        'djangorestframework'
     ],
     extras_require={
-        'Scrap online data': 'scrapy',
+        'Scrap online data': 'scrapy'
     },
     classifiers=[
         'Development Status :: 1 - Alpha/Planning',

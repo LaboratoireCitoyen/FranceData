@@ -1,0 +1,28 @@
+sudo: false
+language: python
+env:
+- DJANGO="django>1.8,<1.9" DJANGO_SETTINGS_MODULE=apiserver.settings
+python:
+- "2.7"
+install:
+- pip install $DJANGO pep8 flake8
+- pip install https://github.com/political-memory/django-representatives/archive/master.tar.gz#egg=django-representatives
+- pip install https://github.com/political-memory/django-representatives-votes/archive/master.tar.gz#egg=django-representatives-votes
+- pip install -e .
+script:
+- pep8 francedata/ --exclude migrations --ignore E128
+- flake8 francedata/ --exclude migrations --ignore E128
+- pep8 apiserver/ --exclude migrations --ignore E128
+- flake8 apiserver/ --exclude migrations --ignore E128
+- ./manage.py migrate
+deploy:
+- provider: openshift
+  user: joyard.nicolas@gmail.com
+  password:
+    secure: "Y+rjin+2YQagPUm0YC5ckO7zO7F4q+DQ0HMkqA8OYBcmy5OZhvtPRGGWPMZBaheqsBCeyNNCr+r/1R9AZVzby+e1Ax8m9FYIbIGoLwfPGj8MawP3uB1lQuPmr9uphdZ6tZ6t/zbjED6mNKTljINbe+bk5xGG6D9cGR6OLqsqtwo="
+  app: francedata
+  domain: njoyard
+  deployment_branch: minimal_project
+  on:
+    repo: SocieteCitoyenne/FranceData
+    branch: minimal_project

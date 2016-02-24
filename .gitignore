@@ -1,3 +1,4 @@
 data/*.json
 .ropeproject
 *pyc
+db.sqlite3

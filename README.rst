@@ -9,12 +9,11 @@ Initialiser le serveur
 FranceData inclut un serveur d'API simple basé sur django-representatives et
 django-representatives-votes.
 
-Dans ``apiserver/``, synchronisez la base de données (fichier SQLite3 local par
-défaut)::
+Synchronisez la base de données (fichier SQLite3 local par défaut) :
 
     manage.py migrate
 
-Puis, lancez le serveur::
+Puis, lancez le serveur :
 
     manage.py
 
