@@ -64,10 +64,17 @@ class ScrutinSpider(BaseSpider):
             yield item
 
     def parse_senat_session(self, response):
-        for link in response.xpath('//span[@class="blocscrnr"]'):
-            href = link.xpath('a/@href')[0].extract()
-            yield Request(url=self.make_url(response, href),
+        for bloc in response.xpath('//div[@class="blocscr"]'):
+            href = bloc.xpath('span[@class="blocscrnr"]/a/@href')[0].extract()
+            dlink = bloc.xpath(
+                '//a[contains(@href, "/dossier-legislatif/")]/@href')
+
+            req = Request(url=self.make_url(response, href),
                           callback=self.parse_senat_scrutin)
+            if len(dlink):
+                req.meta['dlink'] = dlink[0].extract()
+
+            yield req
 
     def parse_senat_scrutin(self, response):
         item = ScrutinItem()
@@ -92,7 +99,14 @@ class ScrutinSpider(BaseSpider):
                                            _months[dmatches.group(2)],
                                            int(dmatches.group(1)))
 
-        item['dossier_url'] = self.make_url(response, response.xpath(
-            '//a[contains(@href, "/dossier-legislatif/")]/@href')[0].extract())
+        if 'dlink' in response.meta:
+            item['dossier_url'] = response.meta['dlink']
+        else:
+            dlink = response.xpath(
+                '//a[contains(@href, "/dossier-legislatif/")]/@href')
+
+            if len(dlink):
+                item['dossier_url'] = self.make_url(response,
+                    dlink[0].extract())
 
         yield item
