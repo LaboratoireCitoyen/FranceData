@@ -55,7 +55,7 @@ Contient la liste des scrutins publics de l'Assemblée nationale et du Sénat.
 		chambre: abréviation de la chambre parlementaire du scrutin
 			"AN" ou "SEN"
 
-		numero: numéro de scrutin, attention ce n'est pas toujours un entier
+		numero: numéro de scrutin, sous la forme 'annee-numero'
 			"1238" ou "2014-121"
 
 		url: URL du scrutin sur le site officiel de la chambre (PK)
@@ -93,3 +93,11 @@ du Sénat.
 
 		parl_url: URL de la page du parlementaire, absent pour les députés
 			"http://www.senat.fr/senateur/abate_patrick14263u.html"
+
+### data/votes/*.json
+
+Chaque fichier contient la liste des votes d'un scrutin public, au même format
+que le fichier `data/votes.json`.
+
+Le nom d'un fichier est `CHAMBRE-NUMERO.json`, où `CHAMBRE` et `NUMERO` sont les
+valeurs des champs correspondants dans le fichier `data/scrutins.json`.

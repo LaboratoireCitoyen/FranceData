@@ -1,4 +1,5 @@
 data/*.json
+data/votes/*.json
 .ropeproject
 *pyc
 db.sqlite3
