@@ -88,13 +88,19 @@ class VoteSpider(BaseSpider):
         with open(infile, 'r') as f:
             scrutins = json.loads(f.read())
 
-        reloaded = []
-
         for scrutin in scrutins:
             if self.has_votes(scrutin):
                 # Le scrutin a déjà des votes, on les recharge
+                reloaded = []
                 for v in self.get_votes(scrutin):
                     reloaded.append(v)
+
+                if len(reloaded):
+                    # Requête spéciale pour ré-exporter les votes rechargés
+                    req = Request(url='http://www.senat.fr/',
+                                  callback=self.reyield)
+                    req.meta['reloaded'] = reloaded
+                    yield req
             else:
                 # Nouveau scrutin
                 if scrutin['chambre'] == 'AN':
@@ -105,12 +111,6 @@ class VoteSpider(BaseSpider):
                 req = Request(url=scrutin['url'], callback=cb)
                 req.meta['scrutin'] = scrutin
                 yield req
-
-        if len(reloaded):
-            # Requête spéciale pour ré-exporter les votes rechargés
-            req = Request(url='http://www.senat.fr/', callback=self.reyield)
-            req.meta['reloaded'] = reloaded
-            yield req
 
     def reyield(self, response):
         '''
