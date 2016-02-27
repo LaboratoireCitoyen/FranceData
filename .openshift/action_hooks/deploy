@@ -17,4 +17,5 @@ python ${OPENSHIFT_REPO_DIR}manage.py migrate --noinput
 pushd ${OPENSHIFT_REPO_DIR}
 mkdir -p wsgi/static
 ./manage.py collectstatic --noinput
+ln -s ${OPENSHIFT_REPO_DIR}data wsgi/static/json
 popd
