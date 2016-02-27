@@ -44,3 +44,18 @@ Lancez les scripts d'import :
     cat data/scrutins.json | francedata_import_scrutins
     cat data/votes.json | francedata_import_votes
 
+Déployer sur Openshift
+----------------------
+
+Installer et configurer RHC puis créer une app comme suit:
+
+    rhc app-create \
+        python-2.7 cron-1.4 postgresql-9.2 \
+        -a francedata \
+        -e OPENSHIFT_PYTHON_WSGI_APPLICATION=apiserver/wsgi.py \
+        --from-code http://github.com/SocieteCitoyenne/FranceData.git \
+        --no-git
+
+Il est conseillé d'exécuter manuellement le script `bin/update_all` une première
+fois pour initialiser les données.  Par la suite un job cron quotidien tiendra
+les données à jour.
