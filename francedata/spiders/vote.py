@@ -46,8 +46,13 @@ class VoteSpider(BaseSpider):
         if not os.path.exists(os.path.dirname(outfile)):
             os.makedirs(os.path.dirname(outfile))
 
-        with open(outfile, 'w') as f:
+        # Ecriture atomique
+        with open('%s.tmp' % outfile, 'w') as f:
             json.dump(votes, f, cls=ScrapyJSONEncoder)
+            f.flush()
+            os.fsync(f.fileno())
+
+        os.rename('%s.tmp' % outfile, outfile)
 
     def get_votes(self, scrutin):
         '''
@@ -101,7 +106,7 @@ class VoteSpider(BaseSpider):
 
     def reyield(self, response):
         '''
-        Emet tous les items dand meta[reloaded]
+        Emet tous les items dans meta[reloaded]
         '''
         for v in response.meta['reloaded']:
             vote = VoteItem()
