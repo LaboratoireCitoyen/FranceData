@@ -15,6 +15,7 @@ NEWSPIDER_MODULE = 'francedata.spiders'
 
 DUPEFILTER_CLASS = 'francedata.filters.URLScreenFilter'
 LOG_LEVEL = 'INFO'
+TELNETCONSOLE_ENABLED = False
 
 # Crawl responsibly by identifying yourself on the user-agent
 # USER_AGENT = 'francedata (+http://www.yourdomain.com)'
