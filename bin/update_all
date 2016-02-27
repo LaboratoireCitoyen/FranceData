@@ -3,22 +3,24 @@ set -x
 
 export DJANGO_SETTINGS_MODULE=apiserver.settings
 
-echo "Update started at $(date)"
+DATADIR=${1:-$(dirname $(dirname $0))/data}
 
-[ -f data/parlementaires.json ] && rm data/parlementaires.json
-scrapy crawl parlspider -o data/parlementaires.json
-cat data/parlementaires.json | francedata_import_representatives
+echo "Update started at $(date) in $DATADIR"
 
-[ -f data/dossiers.json ] && rm data/dossiers.json
-scrapy crawl dossierspider -o data/dossiers.json
-cat data/dossiers.json | francedata_import_dossiers
+[ -f $DATADIR/parlementaires.json ] && rm $DATADIR/parlementaires.json
+scrapy crawl parlspider -o $DATADIR/parlementaires.json
+cat $DATADIR/parlementaires.json | francedata_import_representatives
 
-[ -f data/scrutins.json ] && rm data/scrutins.json
-scrapy crawl scrutinspider -o data/scrutins.json
-cat data/scrutins.json | francedata_import_scrutins
+[ -f $DATADIR/dossiers.json ] && rm $DATADIR/dossiers.json
+scrapy crawl dossierspider -o $DATADIR/dossiers.json
+cat $DATADIR/dossiers.json | francedata_import_dossiers
 
-[ -f data/votes.json ] && rm data/votes.json
-scrapy crawl votespider -o data/votes.json
-cat data/votes.json | francedata_import_votes
+[ -f $DATADIR/scrutins.json ] && rm $DATADIR/scrutins.json
+scrapy crawl scrutinspider -o $DATADIR/scrutins.json
+cat $DATADIR/scrutins.json | francedata_import_scrutins
+
+[ -f $DATADIR/votes.json ] && rm $DATADIR/votes.json
+scrapy crawl votespider -o $DATADIR/votes.json
+cat $DATADIR/votes.json | francedata_import_votes
 
 echo "Update finished at $(date)"
