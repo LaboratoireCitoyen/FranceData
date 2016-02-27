@@ -48,6 +48,9 @@ class VoteSpider(BaseSpider):
         '''
         outfile = self.vote_file(scrutin)
 
+        if len(votes) == 0:
+            return
+
         if not os.path.exists(os.path.dirname(outfile)):
             os.makedirs(os.path.dirname(outfile))
 
