@@ -6,8 +6,6 @@ python:
 - "2.7"
 install:
 - pip install $DJANGO pep8 flake8
-- pip install https://github.com/political-memory/django-representatives/archive/master.tar.gz#egg=django-representatives
-- pip install https://github.com/political-memory/django-representatives-votes/archive/master.tar.gz#egg=django-representatives-votes
 - pip install -e .
 script:
 - pep8 francedata/ --exclude migrations --ignore E128
@@ -22,7 +20,7 @@ deploy:
     secure: "Y+rjin+2YQagPUm0YC5ckO7zO7F4q+DQ0HMkqA8OYBcmy5OZhvtPRGGWPMZBaheqsBCeyNNCr+r/1R9AZVzby+e1Ax8m9FYIbIGoLwfPGj8MawP3uB1lQuPmr9uphdZ6tZ6t/zbjED6mNKTljINbe+bk5xGG6D9cGR6OLqsqtwo="
   app: francedata
   domain: njoyard
-  deployment_branch: minimal_project
+  deployment_branch: master
   on:
     repo: SocieteCitoyenne/FranceData
-    branch: minimal_project
+    branch: master
