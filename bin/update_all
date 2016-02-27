@@ -8,20 +8,24 @@ DATADIR=${1:-$(dirname $(dirname $0))/data}
 
 echo "Update started at $(date) in $DATADIR"
 
+scrapy crawl parlspider -o $DATADIR/parlementaires-tmp.json
 [ -f $DATADIR/parlementaires.json ] && rm $DATADIR/parlementaires.json
-scrapy crawl parlspider -o $DATADIR/parlementaires.json
+mv $DATADIR/parlementaires-tmp.json $DATADIR/parlementaires.json
 cat $DATADIR/parlementaires.json | francedata_import_representatives
 
+scrapy crawl dossierspider -o $DATADIR/dossiers-tmp.json
 [ -f $DATADIR/dossiers.json ] && rm $DATADIR/dossiers.json
-scrapy crawl dossierspider -o $DATADIR/dossiers.json
+mv $DATADIR/dossiers-tmp.json $DATADIR/dossiers.json
 cat $DATADIR/dossiers.json | francedata_import_dossiers
 
+scrapy crawl scrutinspider -o $DATADIR/scrutins-tmp.json
 [ -f $DATADIR/scrutins.json ] && rm $DATADIR/scrutins.json
-scrapy crawl scrutinspider -o $DATADIR/scrutins.json
+mv $DATADIR/scrutins-tmp.json $DATADIR/scrutins.json
 cat $DATADIR/scrutins.json | francedata_import_scrutins
 
+scrapy crawl votespider -o $DATADIR/votes-tmp.json -a DATADIR=$DATADIR
 [ -f $DATADIR/votes.json ] && rm $DATADIR/votes.json
-scrapy crawl votespider -o $DATADIR/votes.json -a DATADIR=$DATADIR
+mv $DATADIR/votes-tmp.json $DATADIR/votes.json
 cat $DATADIR/votes.json | francedata_import_votes
 
 echo "Update finished at $(date)"
