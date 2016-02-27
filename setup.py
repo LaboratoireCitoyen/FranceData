@@ -22,7 +22,6 @@ setup(
     install_requires=[
         'django-representatives-votes>=0.0.15',
         'django>=1.8,<1.9',
-        'django-filter',
         'djangorestframework',
         'scrapy'
     ],
