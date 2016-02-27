@@ -23,6 +23,7 @@ setup(
         'django-representatives-votes>=0.0.15',
         'django>=1.8,<1.9',
         'djangorestframework',
+        'lxml==3.4.4',
         'scrapy'
     ],
     extras_require={
