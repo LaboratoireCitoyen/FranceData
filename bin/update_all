@@ -3,6 +3,7 @@ set -x
 
 export DJANGO_SETTINGS_MODULE=apiserver.settings
 
+
 DATADIR=${1:-$(dirname $(dirname $0))/data}
 
 echo "Update started at $(date) in $DATADIR"
@@ -20,7 +21,7 @@ scrapy crawl scrutinspider -o $DATADIR/scrutins.json
 cat $DATADIR/scrutins.json | francedata_import_scrutins
 
 [ -f $DATADIR/votes.json ] && rm $DATADIR/votes.json
-scrapy crawl votespider -o $DATADIR/votes.json
+scrapy crawl votespider -o $DATADIR/votes.json -a DATADIR=$DATADIR
 cat $DATADIR/votes.json | francedata_import_votes
 
 echo "Update finished at $(date)"

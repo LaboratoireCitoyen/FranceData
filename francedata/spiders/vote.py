@@ -24,6 +24,11 @@ class VoteSpider(BaseSpider):
         u'Abstentions': 'Abstention'
     }
 
+    def __init__(self, category=None, *args, **kwargs):
+        super(VoteSpider, self).__init__(*args, **kwargs)
+        if 'DATADIR' in kwargs:
+            self.DATADIR = kwargs['DATADIR']
+
     def vote_file(self, scrutin):
         '''
         Générer le nom de fichier pour les votes d'un scrutin
