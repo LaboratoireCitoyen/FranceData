@@ -16,7 +16,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    long_description=read('README.rst'),
+    long_description=read('README.md'),
     license='MIT',
     keywords='django france',
     install_requires=[
