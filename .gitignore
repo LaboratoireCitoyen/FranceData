@@ -1,3 +1,4 @@
 data/*.json
+data/votes/*.json
 .ropeproject
 *pyc
