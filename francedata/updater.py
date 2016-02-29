@@ -23,27 +23,26 @@ commands = {
 
 
 def crawl(spider, datadir, output, **spargs):
-    tmpfile = os.path.join(datadir, 'tmp-%s' % output)
     outfile = os.path.join(datadir, output)
+    tmpfile = os.path.join(datadir, '%s.tmp' % output)
+
+    if os.path.exists(tmpfile):
+        os.remove(tmpfile)
 
     process = CrawlerProcess({
         'BOT_NAME': 'francedata',
         'LOG_LEVEL': 'INFO',
         'TELNETCONSOLE_ENABLED': False,
-        'FEED_URI': tmpfile,
-        'FEED_FORMAT': 'json',
+        'OUTPUT_FILE': tmpfile,
         'DUPEFILTER_CLASS': 'francedata.filters.URLScreenFilter',
         'ITEM_PIPELINES': {
             'francedata.pipelines.FrancedataPipeline': 500
         },
     })
 
-    process.crawl(spider, **spargs)
-
-    if os.path.exists(tmpfile):
-        os.remove(tmpfile)
-
     logger.info('** Start crawling with %s **' % spider)
+
+    process.crawl(spider, **spargs)
     process.start()
 
     if os.path.exists(outfile):

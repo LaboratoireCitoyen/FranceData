@@ -74,11 +74,14 @@ class VoteSpider(BaseSpider):
         for v in votes:
             yield v
 
+    def set_pipeline(self, pipeline):
+        self.pipeline = pipeline
+
     def start_requests(self):
         '''
         Génère les requêtes pour le crawler pour chaque scrutin n'ayant pas
-        (encore) son fichier de votes + une requête spéciale pour re-exporter
-        les votes précédemment crawlés
+        (encore) son fichier de votes, et ré-envoie au pipeline les items
+        précédemment crawlés
         '''
         infile = os.path.join(self.DATADIR, 'scrutins.json')
 
@@ -93,14 +96,18 @@ class VoteSpider(BaseSpider):
             if self.has_votes(scrutin):
                 # Le scrutin a déjà des votes, on les recharge
                 for v in self.get_votes(scrutin):
-                    reloaded.append(v)
+                    vote = VoteItem()
 
-                if len(reloaded):
-                    # Requête spéciale pour ré-exporter les votes rechargés
-                    req = Request(url='http://www.senat.fr/#nodedupe',
-                                  callback=self.reyield)
-                    req.meta['reloaded'] = reloaded
-                    yield req
+                    vote['chambre'] = v['chambre']
+                    vote['scrutin_url'] = v['scrutin_url']
+                    vote['division'] = v['division']
+                    if vote['chambre'] == 'AN':
+                        vote['prenom'] = v['prenom']
+                        vote['nom'] = v['nom']
+                    else:
+                        vote['parl_url'] = v['parl_url']
+
+                    self.pipeline.process_item(vote, self)
             else:
                 # Nouveau scrutin
                 if scrutin['chambre'] == 'AN':
@@ -111,24 +118,6 @@ class VoteSpider(BaseSpider):
                 req = Request(url=scrutin['url'], callback=cb)
                 req.meta['scrutin'] = scrutin
                 yield req
-
-    def reyield(self, response):
-        '''
-        Emet tous les items dans meta[reloaded]
-        '''
-        for v in response.meta['reloaded']:
-            vote = VoteItem()
-
-            vote['chambre'] = v['chambre']
-            vote['scrutin_url'] = v['scrutin_url']
-            vote['division'] = v['division']
-            if vote['chambre'] == 'AN':
-                vote['prenom'] = v['prenom']
-                vote['nom'] = v['nom']
-            else:
-                vote['parl_url'] = v['parl_url']
-
-            yield vote
 
     def parse_an_votes(self, response):
         '''
