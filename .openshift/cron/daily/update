@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x
+
+cd $OPENSHIFT_REPO_DIR
+nohup bin/update_all ${OPENSHIFT_DATA_DIR}json > ${OPENSHIFT_LOG_DIR}update_all.log 2>&1 &
