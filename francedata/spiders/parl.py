@@ -4,7 +4,7 @@ import re
 from urllib import quote
 
 from scrapy import Request
-from scrapy.contrib.spiders import CrawlSpider
+from scrapy.spiders import CrawlSpider
 
 
 class ParlSpider(CrawlSpider):

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from scrapy import Request
-from scrapy.contrib.spiders import Rule
-from scrapy.contrib.linkextractors import LinkExtractor
+from scrapy.spiders import Rule
+from scrapy.linkextractors import LinkExtractor
 
 from francedata.items import DossierItem
 
