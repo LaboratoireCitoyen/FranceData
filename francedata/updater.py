@@ -40,6 +40,9 @@ def crawl(spider, datadir, output, **spargs):
 
     process.crawl(spider, **spargs)
 
+    if os.path.exists(tmpfile):
+        os.remove(tmpfile)
+
     logger.info('** Start crawling with %s **' % spider)
     process.start()
 
