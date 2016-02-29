@@ -24,6 +24,11 @@ setup(
         'scrapy',
         'static'
     ],
+    entry_points={
+        'console_scripts': [
+            'francedata_update = francedata.updater:update'
+        ]
+    },
     classifiers=[
         'Development Status :: 1 - Alpha/Planning',
         'Environment :: Web Environment',
