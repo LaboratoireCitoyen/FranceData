@@ -1,7 +1,7 @@
 FranceData permet de crawler le site de l'assemblée nationnale pour en extraire
 tout les votes.
 
-Fait pour la Societe Citoyenne, pour IlsTravaillentPourVous.fr
+Fait pour Laboratoire Citoyen, pour IlsTravaillentPourVous.fr
 
 Mettre à jour les données
 -------------------------
