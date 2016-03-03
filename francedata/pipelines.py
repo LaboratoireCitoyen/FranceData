@@ -5,6 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
+import gzip
 import json
 
 from scrapy import signals
@@ -24,7 +25,7 @@ class FrancedataPipeline(object):
         return pipeline
 
     def __init__(self, outfile):
-        self.json = open(outfile, 'w+b')
+        self.json = gzip.open(outfile, 'wb')
 
     def spider_opened(self, spider):
         self.json.write('[')

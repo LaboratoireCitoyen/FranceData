@@ -23,8 +23,8 @@ commands = {
 
 
 def crawl(spider, datadir, output, **spargs):
-    outfile = os.path.join(datadir, output)
-    tmpfile = os.path.join(datadir, '%s.tmp' % output)
+    outfile = os.path.join(datadir, '%s.gz' % output)
+    tmpfile = os.path.join(datadir, '%s.tmp.gz' % output)
 
     if os.path.exists(tmpfile):
         os.remove(tmpfile)

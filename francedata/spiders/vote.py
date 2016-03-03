@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import gzip
 import json
 import re
 import os
@@ -40,7 +41,7 @@ class VoteSpider(BaseSpider):
         '''
         Vérifie si le fichier de votes d'un scrutin existe
         '''
-        return os.path.exists(self.vote_file(scrutin))
+        return os.path.exists('%s.gz' % self.vote_file(scrutin))
 
     def write_votes(self, scrutin, votes):
         '''
@@ -55,12 +56,12 @@ class VoteSpider(BaseSpider):
             os.makedirs(os.path.dirname(outfile))
 
         # Ecriture atomique
-        with open('%s.tmp' % outfile, 'w') as f:
+        with gzip.open('%s.tmp.gz' % outfile, 'wb') as f:
             json.dump(votes, f, cls=ScrapyJSONEncoder)
             f.flush()
             os.fsync(f.fileno())
 
-        os.rename('%s.tmp' % outfile, outfile)
+        os.rename('%s.tmp.gz' % outfile, '%s.gz'  % outfile)
 
     def get_votes(self, scrutin):
         '''
@@ -68,7 +69,7 @@ class VoteSpider(BaseSpider):
         '''
         infile = self.vote_file(scrutin)
 
-        with open(infile, 'r') as f:
+        with gzip.open('%s.gz' % infile, 'rb') as f:
             votes = json.load(f)
 
         for v in votes:
@@ -83,12 +84,12 @@ class VoteSpider(BaseSpider):
         (encore) son fichier de votes, et ré-envoie au pipeline les items
         précédemment crawlés
         '''
-        infile = os.path.join(self.DATADIR, 'scrutins.json')
+        infile = os.path.join(self.DATADIR, 'scrutins.json.gz')
 
         if not os.path.exists(infile):
             raise Exception('Fichier %s inexistant' % infile)
 
-        with open(infile, 'r') as f:
+        with gzip.open(infile, 'rb') as f:
             scrutins = json.loads(f.read())
 
         reloaded = []
