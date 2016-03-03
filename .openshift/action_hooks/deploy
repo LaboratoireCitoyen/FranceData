@@ -11,6 +11,6 @@ pip install -U pip
 pip install -Ue ${OPENSHIFT_REPO_DIR}
 
 mkdir -p ${OPENSHIFT_DATA_DIR}json
-cp ${OPENSHIFT_REPO_DIR}data/SCHEMA.md ${OPENSHIFT_DATA_DIR}json
+cp ${OPENSHIFT_REPO_DIR}data/index.html ${OPENSHIFT_DATA_DIR}json
 
 mkdir -p ${OPENSHIFT_REPO_DIR}wsgi/static
