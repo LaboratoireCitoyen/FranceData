@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: 'Quattrocento';
+        background-color: #eee;
+        margin: 0 10%;
+        line-height: 1.5em;
+      }
+
+      a {
+        color: black;
+
+        text-decoration: none;
+        outline: none;
+
+        background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAMzMzP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==);
+        background-position: left bottom;
+        background-repeat: repeat-x;
+        background-size: 100% 20%;
+
+        transition: all .25s;
+      }
+
+      a:hover {
+        background-size: 100%  100%
+      }
+
+      header {
+        line-height: 5em;
+      }
+
+      header h1:before {
+        content: 'x';
+        color: white;
+        background-color: white;
+        border-left: 1ex solid #051440;
+        border-right: 1ex solid #EC1920;
+        margin-right: 1em;
+      }
+
+      nav {
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      nav > section {
+        flex-basis: 50%;
+        min-width: 400px;
+      }
+
+      dl {
+        border-left: .75ex solid #ccc;
+        padding-left: .75ex;
+        margin: 1ex 0;
+      }
+
+      section > dl {
+        margin: 2ex;
+      }
+
+      dt {
+        font-family: monospace;
+        white-space: pre;
+      }
+
+      dd {
+        margin-left: 3ex;
+      }
+
+      .PK {
+        font-weight: bold;
+      }
+
+      dd + dt {
+        margin-top: 1ex;
+      }
+
+      .example:before {
+        content: 'Exemple : ';
+      }
+
+      .example cite {
+        font-family: monospace;
+        font-style: normal;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="//github.com/SocieteCitoyenne/FranceData"><img style="position: absolute; top: 0; right: 0; border: 0;" src="//camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    <header>
+      <h1>FranceData</h1>
+    </header>
+    <nav>
+      <section>
+        <h2>Dumps au format JSON</h2>
+        <aside>Les données sont mises à jour toutes les 24h.</aside>
+        <ul>
+          <li><a href="parlementaires.json.gz" target="_blank">Députés et Sénateurs</a></li>
+          <li><a href="dossiers.json.gz" target="_blank">Dossiers législatifs</a></li>
+          <li><a href="scrutins.json.gz" target="_blank">Scrutins publics</a></li>
+          <li><a href="votes.json.gz" target="_blank">Votes lors des scrutins publics</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Provenance des données</h2>
+        <ul>
+          <li><a href="//nosdeputes.fr" target="_blank">NosDéputés.fr</a> pour la liste des Députés</li>
+          <li><a href="//nossenateurs.fr" target="_blank">NosSénateurs.fr</a> pour la liste des Sénateurs</li>
+          <li><a href="//adresse.data.gouv.fr" target="_blank">adresse.data.gouv.fr</a> pour le géocodage des adresses</li>
+          <li><a href="//assemblee-nationale.fr" target="_blank">assemblee-nationale.fr</a> pour les dossiers, scrutins et votes à l'Assemblée nationale</li>
+          <li><a href="//senat.fr" target="_blank">senat.fr</a> pour les dossiers, scrutins et votes au Sénat</li>
+        </ul>
+      </section>
+    </nav>
+    <section>
+      <h2>Schéma</h2>
+
+      <section>
+        <h3>Parlementaires</h3>
+        <aside>
+          Le fichier <cite>parlementaires.json</cite> contient la liste de tous
+          les Députés et Sénateurs.  Les données sont
+          <a href="//cpc.regardscitoyens.org/trac/wiki/API#Informationdund%C3%A9put%C3%A9particulier" target="_blank">au format de l'API NosDéputés.fr et NosSénateurs.fr</a>
+          avec en complément les champs suivants :
+        </aside>
+        <dl>
+          <dt>&lt;listitem&gt;</dt>
+          <dd>
+            <dl>
+              <dt>chambre</dt>
+              <dd>Abréviation de la chambre du parlementaire</dd>
+              <dd class="example"><cite>AN</cite> ou <cite>SEN</cite></dd>
+
+              <dt>photo_url</dt>
+              <dd>URL de la photo du parlementaire</dd>
+              <dd class="example"><cite>http://www.nosdeputes.fr/depute/photo/gilda-hobert</cite></dd>
+
+              <dt>adresses</dt>
+              <dd>
+                <dl>
+                  <dt>&lt;listitem&gt;</dt>
+                  <dd>
+                    <dl>
+                      <dt>geo</dt>
+                      <dd>
+                        Géocodage de l'adresse ; contient le premier <cite>feature</cite> de l'objet GeoCodeJSON renvoyé par
+                        <a href="//adresse.data.gouv.fr/api/" target="_blank">api-adresse.data.gouv.fr</a>
+                        (voir la <a href="//github.com/geocoders/geocodejson-spec" target="_blank">spécification GeoCodeJSON</a>)
+                      </dd>
+                    </dl>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>Dossiers législatifs</h3>
+        <aside>
+          Le fichier <cite>dossiers.json</cite> contient la liste des dossiers
+          législatifs de l'Assemblée nationale et du Sénat.
+        </aside>
+        <dl>
+          <dt>&lt;listitem&gt;</dt>
+          <dd>
+            <dl>
+              <dt class="PK">url_an</dt>
+              <dd>URL du dossier sur le site officiel de l'Assemblée nationale, peut être absent pour un dossier passé uniquement au Sénat</dd>
+              <dd class="example"><cite>http://www.assemblee-nationale.fr/14/dossiers/prorogation_application_loi_55-385.asp</cite></dd>
+
+              <dt class="PK">url_sen</dt>
+              <dd>URL du dossier sur le site officiel du Sénat, peut être absent pour un dossier passé uniquement à l'Assemblée nationale</dd>
+              <dd class="example"><cite>http://www.senat.fr/dossier-legislatif/pjl15-356.html</cite></dd>
+
+              <dt>chambre</dt>
+              <dd>Abréviation de la chambre parlementaire du dossier</dd>
+              <dd class="example"><cite>AN</cite> ou <cite>SEN</cite></dd>
+
+              <dt>titre</dt>
+              <dd>Titre du dossier</dd>
+              <dd class="example"><cite>Pouvoirs publics : application de la loi relative à l'état d'urgence</cite>
+            </dl>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>Scrutins publics</h3>
+        <aside>
+          Le fichier <cite>scrutins.json</cite> contient la liste des scrutins
+          publics de l'Assemblée nationale et du Sénat.
+        </aside>
+        <dl>
+          <dt>&lt;listitem&gt;</dt>
+          <dd>
+            <dl>
+              <dt class="PK">url</dt>
+              <dd>URL du scrutin sur le site officiel de la chambre</dd>
+              <dd class="example"><cite>http://www2.assemblee-nationale.fr/scrutins/detail/(legislature)/14/(num)/1238</cite></dd>
+
+              <dt>chambre</dt>
+              <dd>Abréviation de la chambre parlementaire du scrutin</dd>
+              <dd class="example"><cite>AN</cite> ou <cite>SEN</cite></dd>
+
+              <dt>numero</dt>
+              <dd>Numéro de scrutin (attention ce n'est pas toujours un entier)</dd>
+              <dd class="example"><cite>1238</cite> ou <cite>2014-121</cite></dd>
+
+              <dt>objet</dt>
+              <dd>objet du scrutin</dd>
+              <dd class="example"><cite>L'ensemble du projet de loi prorogeant l'application de la loi n° 55-385 du 3 avril 1955 relative à l'état d'urgence (première lecture)</cite></dd>
+
+              <dt>date</dt>
+              <dd>date du scrutin au format "YYYY-MM-DD"</dd>
+              <dd class="example"><cite>2016-02-16</cite></dd>
+
+              <dt>dossier_url</dt>
+              <dd>URL du dossier concerné (FK -> data/dossiers.json:url_an ou url_sen suivant la chambre)</dd>
+              <dd class="example"><cite>http://www.assemblee-nationale.fr/14/dossiers/prorogation_application_loi_55-385.asp</cite></dd>
+            </dl>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h3>Votes</h3>
+        <aside>
+          Le fichier <cite>votes.json</cite> contient la liste des votes lors de
+          scrutins publics de l'Assemblée nationale et du Sénat.
+        </aside>
+        <dl>
+          <dt>&lt;listitem&gt;</dt>
+          <dd>
+            <dl>
+              <dt class="PK">prenom</dt>
+              <dd>Prénom du parlementaire, absent pour les sénateurs</dd>
+              <dd class="example"><cite>Jean-Pierre</cite></dd>
+
+              <dt class="PK">nom</dt>
+              <dd>Nom du parlementaire, absent pour les sénateurs</dd>
+              <dd class="example"><cite>Allossery</cite></dd>
+
+              <dt class="PK">parl_url</dt>
+              <dd>URL de la page du parlementaire, absent pour les députés</dd>
+              <dd class="example"><cite>http://www.senat.fr/senateur/abate_patrick14263u.html"</cite></dd>
+
+              <dt>chambre</dt>
+              <dd>Abréviation de la chambre parlementaire du vote</dd>
+              <dd class="example"><cite>AN</cite> ou <cite>SEN</cite></dd>
+
+              <dt>scrutin_url</dt>
+              <dd>URL du scrutin concerné</dd>
+              <dd class="example"><cite>http://www2.assemblee-nationale.fr/scrutins/detail/(legislature)/14/(num)/1238</cite></dd>
+
+              <dt>division</dt>
+              <dd>Vote du parlementaire</dd>
+              <dd class="example"><cite>Pour</cite>, <cite>Contre</cite> ou <cite>Abstention</cite></dd>
+            </dl>
+          </dd>
+        </dl>
+      </section>
+    </section>
+  </body>
+</html>

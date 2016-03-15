@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DATADIR=${1:-$(dirname $(dirname $0))/data}
+
+francedata_update parl $DATADIR
+francedata_update dossiers $DATADIR
+francedata_update scrutins $DATADIR
+francedata_update votes $DATADIR

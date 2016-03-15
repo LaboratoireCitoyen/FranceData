@@ -16,13 +16,18 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    long_description=read('README.rst'),
+    long_description=read('README.md'),
     license='MIT',
     keywords='france',
     install_requires=[
+        'lxml==3.4.4',
+        'scrapy',
+        'static'
     ],
-    extras_require={
-        'Scrap online data': 'scrapy',
+    entry_points={
+        'console_scripts': [
+            'francedata_update = francedata.updater:update'
+        ]
     },
     classifiers=[
         'Development Status :: 1 - Alpha/Planning',

@@ -1,7 +1,6 @@
 import urlparse
 
-from scrapy.contrib.spiders import CrawlSpider
-from scrapy import Request
+from scrapy.spiders import CrawlSpider
 
 
 class BaseSpider(CrawlSpider):
