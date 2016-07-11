@@ -1,3 +1,4 @@
+import re
 import urlparse
 
 from scrapy.spiders import CrawlSpider
@@ -17,6 +18,8 @@ class BaseSpider(CrawlSpider):
         return urlparse.urlparse(url).path
 
     def make_url(self, response, href):
+        href = re.sub(r'#.*$', '', href)
+
         if '://' in href:
             return href
 
