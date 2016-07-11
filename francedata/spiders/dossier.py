@@ -12,22 +12,22 @@ class DossierSpider(BaseSpider):
     name = "dossierspider"
 
     rules = [
-        Rule(LinkExtractor(allow=['/scrutins/liste/.*']),
-             'parse_an_scrutins', follow=True),
-        Rule(LinkExtractor(allow=['/\d+/dossiers/.*']),
+        Rule(LinkExtractor(allow=['index-dossier']),
+             'parse_an_index', follow=True),
+        Rule(LinkExtractor(allow=['/(\d+/)?dossiers/[^/]+.asp']),
              'parse_an_dossier'),
-        Rule(LinkExtractor(allow=['/scrutin-public/scr\d+.html']),
-             'parse_senat_session', follow=True),
-        Rule(LinkExtractor(allow=['/dossier-legislatif/.*']),
+        Rule(LinkExtractor(allow=['index-general']),
+             'parse_senat_index', follow=True),
+        Rule(LinkExtractor(allow=['/dossier-legislatif/[^/+].html']),
              'parse_senat_dossier', follow=True)
     ]
 
     start_urls = [
-        'http://www2.assemblee-nationale.fr/scrutins/liste/',
-        'http://www.senat.fr/seancepub.html'
+        'http://www.assemblee-nationale.fr/14/documents/index-dossier.asp',
+        'http://www.senat.fr/dossiers-legislatifs/index-general-projets-propositions-de-lois.html' # noqa
     ]
 
-    def parse_an_scrutins(self, response):
+    def parse_an_index(self, response):
         an_dossiers = response.xpath(
             '//a[contains(@href, "/dossiers/")]/@href').extract()
 
@@ -51,7 +51,7 @@ class DossierSpider(BaseSpider):
 
         yield item
 
-    def parse_senat_session(self, response):
+    def parse_senat_index(self, response):
         sen_dossiers = response.xpath(
             '//a[contains(@href, "/dossier-legislatif/")]/href').extract()
 
