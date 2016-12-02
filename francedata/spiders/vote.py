@@ -128,28 +128,23 @@ class VoteSpider(BaseSpider):
         scrutin = response.meta['scrutin']
         votes = []
 
-        for sel in response.xpath('//div[@class="TTgroupe"]'):
-            nomgroupe = sel.xpath('p[@class="nomgroupe"]/text()')
-            nomgroupe = nomgroupe.extract()[0]
-            nomgroupe = re.search('([^(]+)', nomgroupe).groups(1)[0].strip()
+        sel_base = '''//div[@class="TTgroupe"]//div[@class="%s"]/ul[@class="deputes"]/li'''
+        for division in self.DIVISIONS:
+            reps = response.xpath(sel_base % division)
 
-            for division in self.DIVISIONS:
-                reps = sel.xpath(
-                    '//div[@class="%s"]/ul[@class="deputes"]/li' % division)
+            for rep in reps:
+                if len(rep.xpath('b/text()').extract()) == 0:
+                    continue
 
-                for rep in reps:
-                    if len(rep.xpath('b/text()').extract()) == 0:
-                        continue
+                vote = VoteItem()
+                vote['chambre'] = 'AN'
+                vote['scrutin_url'] = scrutin['url']
+                vote['division'] = division
+                vote['prenom'] = rep.xpath('text()').extract()[0].strip()
+                vote['nom'] = rep.xpath('b/text()').extract()[0].strip()
 
-                    vote = VoteItem()
-                    vote['chambre'] = 'AN'
-                    vote['scrutin_url'] = scrutin['url']
-                    vote['division'] = division
-                    vote['prenom'] = rep.xpath('text()').extract()[0].strip()
-                    vote['nom'] = rep.xpath('b/text()').extract()[0].strip()
-
-                    votes.append(vote)
-                    yield vote
+                votes.append(vote)
+                yield vote
 
         self.write_votes(scrutin, votes)
 
